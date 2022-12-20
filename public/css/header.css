@@ -1,0 +1,121 @@
+header {
+  /* 스와이퍼 넣어서 수정할것 (임시)*/
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+#header_wrap {
+  width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h_logo > a > img {
+  display: block;
+  width: 120px;
+  height: 80px;
+}
+
+.h_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 25px;
+}
+
+.h_menu > li > a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.h_right {
+  display: flex;
+  margin-top: 30px;
+}
+
+.h_log > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.h_log_margin {
+  margin: 0 25px;
+}
+
+.h_btn_wrap {
+  display: none;
+}
+.h_btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.h_btn > span {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.btn_margin {
+  margin: 5px 0;
+}
+.h_zoom {
+  background-image: url(../img/zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+@media (max-width: 1280px) {
+  .h_menu {
+    width: 550px;
+  }
+  .h_menu > li > a {
+    font-size: 18px;
+  }
+
+  .h_right {
+    margin-top: 25px;
+  }
+  .h_log {
+    display: none;
+  }
+  /* header end */
+}
+
+@media (max-width: 950px) {
+  #header_wrap {
+    padding: 10px 20px;
+  }
+  .h_logo > a > img {
+    display: block;
+    width: 120px;
+    height: 80px;
+  }
+
+  .h_menu {
+    display: none;
+  }
+  .h_right {
+    margin-top: 20px;
+  }
+  .h_btn_wrap {
+    display: block;
+  }
+  .h_btn {
+    margin-top: 20px;
+  }
+  .f_call {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
