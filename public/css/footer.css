@@ -63,5 +63,18 @@
   padding: 0 10px;
   box-sizing: border-box;
 }
-
+@media (max-width:630px) {
+  .f_logo > img {
+    display: none;
+}
+.f_call{
+  display: none;
+}
+.f_ff>span>a {
+  font-size: 12px;
+}
+.f_txt {
+  font-size: 10px;
+}
+}
 /* footer end */

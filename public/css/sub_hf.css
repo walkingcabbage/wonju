@@ -1,0 +1,242 @@
+@import url(common/reset.css);
+
+/* header start */
+
+header {
+  /* 스와이퍼 넣어서 수정할것 (임시)*/
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/sub_header01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#header_wrap {
+  width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h_logo > a > img {
+  display: block;
+  width: 120px;
+  height: 80px;
+}
+
+.h_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 25px;
+}
+
+.h_menu > li > a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.h_right {
+  display: flex;
+  margin-top: 30px;
+}
+
+.h_log > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.h_log_margin {
+  margin: 0 25px;
+}
+.h_btn_wrap {
+  display: none;
+}
+.h_btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.h_btn > span {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.btn_margin {
+  margin: 5px 0;
+}
+.h_zoom {
+  background-image: url(../img/zoom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+#sub_header_wrap {
+  padding-top: 75px;
+  box-sizing: border-box;
+}
+
+.sub_logo > a {
+  display: block;
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+}
+.sub_logo > a > img {
+  display: block;
+  width: 240px;
+  height: 185px;
+  margin: 0 auto;
+}
+
+.sub_h_bot {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  padding: 45px 0;
+  box-sizing: border-box;
+}
+
+.home > a {
+  background-image: url(../img/home_wh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: 6px;
+}
+
+.sub_h_bot > span > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* header end */
+
+/* main start */
+
+main {
+  /* 임시 */
+  width: 100%;
+  height: 1200px;
+  background-color: #ddd;
+}
+
+/* main end */
+
+/* footer start */
+
+#footer_wrap {
+  background-color: #ccc;
+  padding: 30px 80px 0;
+  box-sizing: border-box;
+}
+
+.f_logo > img {
+  display: block;
+  width: 175px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.f_call {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.f_call_margin {
+  margin: 0 20px;
+}
+
+.f_txt {
+  text-align: center;
+  color: #222;
+  margin: 10px 0;
+}
+
+.f_ff {
+  text-align: center;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.f_ff > span > a {
+  font-size: 14px;
+  color: #222;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.f_ff > span {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* footer end */
+
+@media (max-width: 1280px) {
+  .h_menu {
+    width: 550px;
+  }
+  .h_menu > li > a {
+    font-size: 18px;
+  }
+
+  .h_right {
+    margin-top: 25px;
+  }
+  .h_log {
+    display: none;
+  }
+  /* header end */
+}
+
+@media (max-width: 950px) {
+  #header_wrap {
+    padding: 10px 20px;
+  }
+  .h_logo > a > img {
+    display: block;
+    width: 120px;
+    height: 80px;
+  }
+
+  .h_menu {
+    display: none;
+  }
+  .h_right {
+    margin-top: 20px;
+  }
+  .h_btn_wrap {
+    display: block;
+    margin-top: 2px;
+  }
+  .f_call {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
+  .h_zoom {
+    display: none;
+  }
+}

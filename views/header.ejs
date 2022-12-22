@@ -1,5 +1,16 @@
-  <div id="header_wrap">
-    <div class="h_btn_wrap">
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="width: 0px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">곤충마을소개</a>
+  <a href="#" class="w3-bar-item w3-button">프로그램</a>
+  <a href="#" class="w3-bar-item w3-button">곤충학습</a>
+  <a href="#" class="w3-bar-item w3-button">커뮤니티</a>
+  <a href="#" class="w3-bar-item w3-button">시설안내</a>
+</div>
+
+
+<div id="header_wrap">
+    <div class="h_btn_wrap" onclick="w3_open()">
       <div class="h_btn">
         <span></span>
         <span class="btn_margin"></span>
@@ -20,3 +31,12 @@
       <span class="h_zoom"><a href=""></a></span>
     </div>
   </div>
+
+  <script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.width = "300px";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.width = "0px";
+    }
+    </script>

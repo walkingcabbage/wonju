@@ -185,4 +185,14 @@ window.addEventListener('resize',()=>{
 }
 })
 
-
+const sec6a=document.querySelectorAll('.sec6_box>a');
+for(let i=0;i<sec6a.length;i++){
+  sec6a[i].addEventListener('mouseenter',(e)=>{
+    e.target.children[1].setAttribute('src',`img/s6icon${i+1}_g.png`);
+  })
+}
+for(let i=0;i<sec6a.length;i++){
+  sec6a[i].addEventListener('mouseleave',(e)=>{
+    e.target.children[1].setAttribute('src',`img/s6icon${i+1}_w.png`);
+  })
+}
