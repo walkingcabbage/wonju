@@ -116,7 +116,7 @@
     position: absolute;
     top: 15%;
     left: 10%;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
   .s6_box_icon {
@@ -396,12 +396,15 @@
     text-align: right;
   }
   .sec6_right {
-    padding: 200px 5% 0;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    padding: 160px 5% 0;
+    flex-direction: column;
   }
+  .sec6_time > p {
+    font-size: 16px;
+}
+.sec6_callnum {
+  font-size: 32px !important;
+}
   .sec_right_top {
     font-size: 42px;
     font-weight: bold;
@@ -441,7 +444,7 @@
     font-weight: 300;
   }
   .sns_txt {
-    font-size: 20px;
+    font-size: 16px;
     padding: 20px 0;
     box-sizing: border-box;
   }
@@ -532,7 +535,17 @@
     bottom: 14%;
   }
 }
-
+@media (max-width:768px) {
+  .sec6_left > h4 {
+    font-size: 32px;
+}
+.sec_right_top {
+  font-size: 32px;
+}
+.sec6_left_left > li > a {
+  font-size: 14px;
+}
+}
 @media (max-width: 630px) {
   #sec6_bot {
     width: 90%;
@@ -558,7 +571,7 @@
     position: absolute;
     top: 15%;
     left: 10%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
   .s6_box_icon {
@@ -601,4 +614,7 @@
     right: 13%;
     bottom: 14%;
   }
+  .s6_ri_txt {
+    font-size: 16px;
+}
 }

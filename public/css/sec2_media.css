@@ -226,6 +226,21 @@
     font-size: 16px;
     font-weight: 300;
   }
+  .sec3_txt2 {
+    font-size: 16px;
+}
+.sec3_inbox1 {
+  font-size: 20px;
+}
+.sec3_inbox2 {
+  font-size: 14px;
+}
+.sec4_title {
+  font-size: 32px;
+}
+.sec4_toptxt {
+  font-size: 14px;
+}
   .sec4_more {
     width: 110px;
     height: 35px;
@@ -234,6 +249,13 @@
     border-radius: 20px;
     margin-top: 50px;
   }
+  .sec4_left_backg {
+    top: 40%;
+}
+#sec4 {
+  padding-bottom: 20px;
+
+}
   .sec4_more > a {
     font-size: 14px;
     display: block;
