@@ -34,9 +34,25 @@
             <% }else if(subcategory=='auditorium'){ %>
             <span><a href="/auditoriumPage">강당</a></span>
             <% }else if(subcategory=='expcenter'){ %>
-            <span><a href="expcenterPage">체험관</a></span>
+            <span><a href="/expcenterPage">체험관</a></span>
             <% } %>
     
         </div>
     </div>
-    <% } %>%>
+    <% } else if(category=='community'){ %>
+        <div id="sub_header_wrap">
+            <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+            <div class="sub_h_bot">
+                <div class="home"><a href="/"></a></div>
+                <span><a href="/noticePage">커뮤니티</a></span>
+                <% if(subcategory=='notice'){ %>
+                <span><a href="/noticePage">공지사항</a></span>
+                <% }else if(subcategory=='FAQ'){ %>
+                <span><a href="/FAQPage">자주하는 질문</a></span>
+                <% }else if(subcategory=='QNA'){ %>
+                <span><a href="/QNAPage">묻고 답하기</a></span>
+                <% } %>
+        
+            </div>
+        </div>
+        <% } %>

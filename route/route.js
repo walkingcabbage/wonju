@@ -58,6 +58,30 @@ router.get('/expcenterPage', function (req, res) {
     subcategory:'expcenter',
   });
 })
+router.get('/noticePage', function (req, res) {
+  res.render('noticeList', {
+    subHeader: true,
+    subFooter:true,
+    category:'community',
+    subcategory:'notice',
+  });
+})
+router.get('/FAQPage', function (req, res) {
+  res.render('noticeList', {
+    subHeader: true,
+    subFooter:true,
+    category:'community',
+    subcategory:'FAQ',
+  });
+})
+router.get('/QNAPage', function (req, res) {
+  res.render('noticeList', {
+    subHeader: true,
+    subFooter:true,
+    category:'community',
+    subcategory:'QNA',
+  });
+})
 
 
 

@@ -28,7 +28,7 @@
     <div class="nav-wrap">
         <ul class="nav-list">
             <li><a href="/lodgingPage"><span>숙소</span></a></li>
-            <li><a href="/auditoriumPage"><span> 강당</span></a></li>
+            <li><a href="/auditoriumPage"><span>강당</span></a></li>
             <li><a href="/expcenterPage"><span>체험관</span></a></li>
         </ul>
         <script>
@@ -43,4 +43,23 @@
         </script>
     </div>
     <!-- 원주 곤충마을 소개 탭  -->
-    <% } %>
+    <% } else if(category=='community'){ %>
+        <div class="nav-wrap">
+            <ul class="nav-list">
+                <li><a href="/noticePage"><span>공지사항</span></a></li>
+                <li><a href="/FAQPage"><span>자주하는 질문</span></a></li>
+                <li><a href="/QNAPage"><span>묻고 답하기</span></a></li>
+            </ul>
+            <script>
+                let active2=document.querySelectorAll('.nav-list>li>a>span');
+                if(`<%= subcategory %>`=='notice'){
+                    active2[0].classList.add('active-list');
+                }else if(`<%= subcategory %>`=='FAQ'){
+                    active2[1].classList.add('active-list');
+                }else if(`<%= subcategory %>`=='QNA'){
+                    active2[2].classList.add('active-list');
+                }
+            </script>
+        </div>
+        <!-- 원주 곤충마을 소개 탭  -->
+        <% } %> %>
