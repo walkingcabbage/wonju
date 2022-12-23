@@ -1,0 +1,201 @@
+.wlflfl {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 1000000000;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px 0px;
+  letter-spacing: 10px;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 2px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 20px;
+}
+
+
+#dlstkakf,#cpgja,#dhtlsmsrlf {
+  max-width: 1400px;
+  width: 100%;
+  margin: 150px auto;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.leaf {
+  padding: 1rem;
+  padding-left: 2rem;
+  background-image: url(../img/icon_leaf.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+}
+.subtitle{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second_tit {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.side_line{
+  display:block;
+  width: 75%; height: 1px;
+  background-color: #000;
+}
+
+.halo_wrap {
+  display: flex;
+  align-items: center;
+}
+
+
+.halo_wrap div {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.halo_wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.halo_txt p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.cpgja_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cpgja_wrap div {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 1280px;
+  width: 100%;
+}
+.cpgja_wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.cpgja_thro p {
+  font-size: 18px;
+  line-height: 2;
+}
+.dhtlsmsrlf_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dhtl_tit {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dhtlsmsrlf_txt {
+  flex: 0.5;
+}
+
+.dhtlsmsrlf_txt p {
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.dhtlsmsrlf_img {
+  flex: 0.8;
+  text-align: center;
+  position: relative;
+}
+
+.skclaqks {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+.wleh {
+  width: 80%;
+  height: 80%;
+}
+
+.eovy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eovy h4 {
+  padding-left: 2.5rem;
+  background-image: url(../img/20090714171904123\ 1.png);
+  background-position: left center;
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width:1280px) {
+  .second_tit {
+    font-size: 24px;
+  }
+
+  .dhtl_tit {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:1024px) {
+  .subtitle{
+    flex-direction: column;
+  }
+  .second_tit {
+    font-size: 18px;
+  }
+  .side_line  {
+    width: 70%;
+  }
+  .halo_txt p {
+    font-size: 16px;
+  }
+  .halo_wrap div img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .cpgja_wrap img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .column {
+    flex-direction: column;
+  }
+}
