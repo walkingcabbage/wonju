@@ -12,12 +12,14 @@ ul.nav-list{
 }
 .nav-list>li{
     width: 10%;
+    min-width: 128px;
 }
 .nav-list>li>a{
     display: block;
     line-height: 50px;
     text-align: center;
     color: #ccc;
+
 }
 .nav-list>li>a:hover{
     color: #749F82;

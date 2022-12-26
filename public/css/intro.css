@@ -38,17 +38,17 @@
   margin: 150px auto;
 }
 
-img {
-  border-radius: 5px;
+#dlstkakf img {
 }
 
 .leaf {
-  padding: 1rem;
-  padding-left: 2rem;
+  padding-left: 40px;
+  margin: 0 10px;
   background-image: url(../img/icon_leaf.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 2rem;
+  white-space: nowrap;
 }
 .subtitle{
   display:flex;
@@ -57,19 +57,22 @@ img {
 }
 .second_tit {
   display: block;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .side_line{
   display:block;
-  width: 75%; height: 1px;
-  background-color: #000;
+  width: 100%; height: 1px;
+  background-color: #ccc;
 }
-
+.first_line{
+  display: none;
+}
 .halo_wrap {
   display: flex;
-  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
 }
 
 
@@ -82,17 +85,19 @@ img {
 .halo_wrap img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .halo_txt p {
   font-size: 18px;
   line-height: 36px;
+  word-break: keep-all;
 }
 
 .cpgja_wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
 }
 
 .cpgja_wrap div {
@@ -103,13 +108,13 @@ img {
   width: 100%;
 }
 .cpgja_wrap img {
-  width: 100%;
+  width:  100%;
   height: 100%;
-  border-radius: 3px;
+  object-fit: cover;
 }
 .cpgja_thro p {
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
 }
 .dhtlsmsrlf_wrap {
   display: flex;
@@ -164,35 +169,37 @@ img {
 }
 
 @media (max-width:1280px) {
-  .second_tit {
-    font-size: 24px;
-  }
 
-  .dhtl_tit {
-    font-size: 20px;
-  }
 }
 
 @media (max-width:1024px) {
-  .subtitle{
-    flex-direction: column;
-  }
-  .second_tit {
-    font-size: 18px;
-  }
   .side_line  {
     width: 70%;
   }
+  .first_line{
+    display: initial;
+  }
+  .second_tit {
+    font-size: 24px;
+  }
   .halo_txt p {
     font-size: 16px;
+    line-height: 32px;
+  }
+  .cpgja_thro p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .dhtl_tit {
+    font-size: 20px;
   }
   .halo_wrap div img {
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .cpgja_wrap img {
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 
   .column {

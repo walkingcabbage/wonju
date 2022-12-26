@@ -63,8 +63,8 @@ section.sukso {
 
 
 /* Style the tab content */
-.tabcontent,
-.tabcontent2{
+.sukso .tabcontent,
+.sukso .tabcontent2{
   display: none;
   padding: 6px 12px;
   border-top: none;
@@ -206,8 +206,8 @@ section.sukso {
 
 /* btn_style End*/
 
-.tabcontent,
-.tabcont2 {
+.sukso .tabcontent,
+.sukso .tabcont2 {
   display: none;
   position: relative;
   cursor: pointer;
@@ -235,13 +235,13 @@ section.sukso {
       transform: translateZ(100%);
   }
 }
-.tabcontent:hover .tabcont_txt{
+.sukso .tabcontent:hover .tabcont_txt{
   display: inline-block;
   position: absolute;
   bottom: -13%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.tabcontent2:hover .tabcont_txt {
+.sukso .tabcontent2:hover .tabcont_txt {
   display: block;
   position: absolute;
   bottom: -13%; left: 50%;

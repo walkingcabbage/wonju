@@ -62,4 +62,26 @@
             </script>
         </div>
         <!-- 원주 곤충마을 소개 탭  -->
-        <% } %> %>
+        <% } else if(category=='learning'){ %>
+            <div class="nav-wrap">
+                <ul class="nav-list">
+                    <li><a href="/learnPage"><span>곤충이란?</span></a></li>
+                    <li><a href="/learnrefPage"><span>곤충자료실</span></a></li>
+                    <li><a href="/stegPage"><span>사슴벌레</span></a></li>
+                    <li><a href="/beatlePage"><span>장수풍뎅이</span></a></li>
+                </ul>
+                <script>
+                    let active3=document.querySelectorAll('.nav-list>li>a>span');
+                    if(`<%= subcategory %>`=='learn'){
+                        active3[0].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='insectref'){
+                        active3[1].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='steg'){
+                        active3[2].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='beatle'){
+                        active3[4].classList.add('active-list');
+                    }
+                </script>
+            </div>
+            <!-- 원주 곤충마을 소개 탭  -->
+            <% } %>

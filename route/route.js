@@ -75,11 +75,43 @@ router.get('/FAQPage', function (req, res) {
   });
 })
 router.get('/QNAPage', function (req, res) {
-  res.render('noticeList', {
+  res.render('QNA', {
     subHeader: true,
     subFooter:true,
     category:'community',
     subcategory:'QNA',
+  });
+})
+router.get('/learnPage', function (req, res) {
+  res.render('learn', {
+    subHeader: true,
+    subFooter:true,
+    category:'learning',
+    subcategory:'learn',
+  });
+})
+router.get('/learnrefPage', function (req, res) {
+  res.render('learn', {
+    subHeader: true,
+    subFooter:true,
+    category:'learning',
+    subcategory:'insectref',
+  });
+})
+router.get('/stegPage', function (req, res) {
+  res.render('steg', {
+    subHeader: true,
+    subFooter:true,
+    category:'learning',
+    subcategory:'steg',
+  });
+})
+router.get('/beatlePage', function (req, res) {
+  res.render('learn', {
+    subHeader: true,
+    subFooter:true,
+    category:'learning',
+    subcategory:'beatle',
   });
 })
 

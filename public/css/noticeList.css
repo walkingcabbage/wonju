@@ -15,7 +15,7 @@
     margin-bottom: 150px;
 }
 .search-wrap{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .notice-holder .search-box{
     text-align: right;
@@ -50,4 +50,29 @@ display: inline-block;
 }
 .notice-holder form>.searchBtn:hover{
     background-color: #2e4941;
+}
+.notice-table{
+    width: 100%;
+    border-top: 2px solid #000;
+    margin-bottom: 150px;
+}
+.notice-table thead{
+    background-color: rgb(238, 238, 238);
+}
+.notice-table th,.notice-table td{
+ padding: 20px 5px;
+ text-align: center;
+ border-bottom: 1px solid #ccc;
+}
+.table-title{
+    text-align:left !important;
+}
+.table-title a:hover{
+text-decoration: underline;
+}
+.notice-table tbody tr{
+    transition: all 0.3s;
+}
+.notice-table tbody tr:hover{
+    background-color: rgb(245, 245, 245);
 }

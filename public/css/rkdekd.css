@@ -16,11 +16,11 @@ section.adt{
   border-radius: 10px;
   object-fit: cover;
 }
-.second_tit{
+.adt .second_tit{
   font-size: 2rem;
   font-weight: 700;
 }
-.leaf{
+.adt .leaf{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
@@ -29,22 +29,22 @@ section.adt{
   background-repeat: no-repeat;
   background-size: 2rem;
 }
-.Auditorium_wrap div{
+.adt .Auditorium_wrap div{
   clear: both;
 }
-.sub_tit{
+.adt .sub_tit{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 50px;
 }
-.line_tit{
+.adt .line_tit{
   display: inline-block;
   width: 80%; height: 1px;
   border-bottom: 1px solid;
   margin: 0.75rem;
 }
-.hr-sect {
+.adt .hr-sect {
   display: flex;
   flex-basis: 100%;
   align-items: center;
@@ -54,8 +54,8 @@ section.adt{
   margin: 10px 0px;
   letter-spacing: 10px;
 }
-.hr-sect::before,
-.hr-sect::after {
+.adt .hr-sect::before,
+.adt .hr-sect::after {
   content: "";
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.35);
@@ -64,21 +64,21 @@ section.adt{
   line-height: 0px;
   margin: 0px 20px;
 }
-.CAUTION ul {
+.adt .CAUTION ul {
   text-align: start;
   padding-left: 11rem;
   line-height: 2rem;
 }
-.large_rkdekd_img{
+.adt .large_rkdekd_img{
   width: 100%;height: 100%;
   position: relative;
 }
-.small_rkdekd_img{
+.adt .small_rkdekd_img{
   width: 100%;height: 100%;
   position: relative;
 }
 /* before */
-.small_rkdekd_img::before{
+.adt .small_rkdekd_img::before{
   content: "";
   width: 100%; height: 100%;
   background-color: #749F82;
@@ -86,7 +86,7 @@ section.adt{
   bottom: -50px; left: -400px;
   z-index: -1;
 }
-.large_rkdekd_img::before{
+.adt .large_rkdekd_img::before{
   content: "";
   width: 100%; height: 100%;
   background-color: #749F82;
@@ -95,7 +95,7 @@ section.adt{
   z-index: -1;
 }
 /* rkdekd txt */
-.rkdekd_txt{
+.adt .rkdekd_txt{
   display: none;
   color: #ffffff;
   background-color: rgb(0, 0, 0, 0.5);
@@ -120,24 +120,24 @@ section.adt{
       transform: translateZ(100%);
   }
 }
-.small_rkdekd_img:hover .th.rkdekd_txt{
+.adt .small_rkdekd_img:hover .th.rkdekd_txt{
   display: inline-block;
 }
-.large_rkdekd_img:hover .eo.rkdekd_txt{
+.adt .large_rkdekd_img:hover .eo.rkdekd_txt{
   display: inline-block;
 }
 
 
 @media (max-width:1280px) {
- .sub_tit{
-  flex-direction: column;
- }
-  .second_tit{
+  .adt .first_line{
+    display: initial;
+  }
+ .adt .second_tit{
     font-size:28px;
   }
 }
 @media (max-width:1024px) { 
-  .second_tit {
+  .adt .second_tit {
     font-size : 24px;
   }
 }
