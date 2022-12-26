@@ -1,4 +1,3 @@
-@import url(common/reset.css);
 
 /* header start */
 
@@ -134,9 +133,9 @@ header {
 
 main {
   /* 임시 */
-  width: 100%;
-  height: 1200px;
-  background-color: #ddd;
+  /* width: 100%;
+  /* height: 1200px; */
+  /* background-color: #ddd; */
 }
 
 /* main end */
