@@ -11,6 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/common.css">
+  <% if(subHeader==true){ %>
+    <link rel="stylesheet" href="css/sub_hf.css">
+    <% } else{ %>
+      <link rel="stylesheet" href="css/header.css">
+    
+    <% } %> 
   <title>원주곤충마을박물관</title>
 
 </head>
@@ -18,13 +24,11 @@
 <body>
   <!-- <div class="wrap"> -->
   <header id="header" class="header">
-    <% if(subHeader==true) {%>
-
-    <% } else{ %>
     <%- include('header') %>
-    <% } %>
   </header>
-
+<nav>
+  <%- include('navTab') %> 
+</nav>
   <main>
     <%- body %>
   </main>
@@ -39,6 +43,7 @@
 <style>
   main {
     background-color: #fff;
+    margin: 0 40px;
   }
 </style>
 <% } %>

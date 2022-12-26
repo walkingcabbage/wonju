@@ -1,0 +1,76 @@
+<% if(category=='intro') {%>
+<div id="sub_header_wrap">
+    <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+    <div class="sub_h_bot">
+        <div class="home"><a href="/"></a></div>
+        <span><a href="/introPage">곤충마을소개</a></span>
+        <span><a href="/introPage">인사말</a></span>
+    </div>
+</div>
+<% } else if(category=='program'){ %>
+<div id="sub_header_wrap">
+    <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+    <div class="sub_h_bot">
+        <div class="home"><a href="/"></a></div>
+        <span><a href="/expPage">프로그램</a></span>
+        <% if(subcategory=='exp'){ %>
+        <span><a href="/expPage">체험프로그램</a></span>
+        <% }else if(subcategory=='camp'){ %>
+        <span><a href="/campPage">캠프프로그램</a></span>
+        <% }else if(subcategory=='book'){ %>
+        <span><a href="">예약하기</a></span>
+        <% } %>
+
+    </div>
+</div>
+<% } else if(category=='facility'){ %>
+<div id="sub_header_wrap">
+    <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+    <div class="sub_h_bot">
+        <div class="home"><a href="/"></a></div>
+        <span><a href="/lodgingPage">시설안내</a></span>
+        <% if(subcategory=='lodging'){ %>
+        <span><a href="/lodgingPage">숙소</a></span>
+        <% }else if(subcategory=='auditorium'){ %>
+        <span><a href="/auditoriumPage">강당</a></span>
+        <% }else if(subcategory=='expcenter'){ %>
+        <span><a href="/expcenterPage">체험관</a></span>
+        <% } %>
+
+    </div>
+</div>
+<% } else if(category=='community'){ %>
+<div id="sub_header_wrap">
+    <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+    <div class="sub_h_bot">
+        <div class="home"><a href="/"></a></div>
+        <span><a href="/noticePage">커뮤니티</a></span>
+        <% if(subcategory=='notice'){ %>
+        <span><a href="/noticePage">공지사항</a></span>
+        <% }else if(subcategory=='FAQ'){ %>
+        <span><a href="/FAQPage">자주하는 질문</a></span>
+        <% }else if(subcategory=='QNA'){ %>
+        <span><a href="/QNAPage">묻고 답하기</a></span>
+        <% } %>
+
+    </div>
+</div>
+<% } else if(category=='learning'){ %>
+<div id="sub_header_wrap">
+    <h2 class="sub_logo"><a href="/"><img src="img/logo2_wh.png" alt=""></a></h2>
+    <div class="sub_h_bot">
+        <div class="home"><a href="/"></a></div>
+        <span><a href="/learnPage">곤충학습</a></span>
+        <% if(subcategory=='learn'){ %>
+        <span><a href="/learnPage">곤충이란?</a></span>
+        <% }else if(subcategory=='insectref'){ %>
+        <span><a href="/insectrefPage">곤충자료실</a></span>
+        <% }else if(subcategory=='steg'){ %>
+        <span><a href="/stegPage">사슴벌레</a></span>
+        <% }else if(subcategory=='beatle'){ %>
+        <span><a href="/beatlePage">장수풍뎅이</a></span>
+        <% } %>
+
+    </div>
+</div>
+<% } %>

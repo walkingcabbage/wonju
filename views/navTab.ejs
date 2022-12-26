@@ -1,0 +1,87 @@
+<!-- 프로그램 탭 -->
+<% if(category=='program'){ %>
+<div class="nav-wrap">
+    <ul class="nav-list">
+        <li><a href="/expPage"><span>체험 프로그램</span></a></li>
+        <li><a href="/campPage"><span> 캠프 프로그램</span></a></li>
+        <li><a href=""><span>예약하기</span></a></li>
+    </ul>
+    <script>
+        let active=document.querySelectorAll('.nav-list>li>a>span');
+        if(`<%= subcategory %>`=='exp'){
+            active[0].classList.add('active-list');
+        }else if(`<%= subcategory %>`=='camp'){
+            active[1].classList.add('active-list');
+        }else if(`<%= subcategory %>`=='camp'){
+            active[2].classList.add('active-list');
+        }
+    </script>
+</div>
+<!-- 원주 곤충마을 소개 탭  -->
+<% }else if(category=='intro'){ %>
+<div class="nav-wrap">
+    <ul class="nav-list">
+        <li><a href="/expPage"><span class="active-list">인사말</span></a></li>
+    </ul>
+</div>
+<% } else if(category=='facility'){ %>
+    <div class="nav-wrap">
+        <ul class="nav-list">
+            <li><a href="/lodgingPage"><span>숙소</span></a></li>
+            <li><a href="/auditoriumPage"><span>강당</span></a></li>
+            <li><a href="/expcenterPage"><span>체험관</span></a></li>
+        </ul>
+        <script>
+            let active1=document.querySelectorAll('.nav-list>li>a>span');
+            if(`<%= subcategory %>`=='lodging'){
+                active1[0].classList.add('active-list');
+            }else if(`<%= subcategory %>`=='auditorium'){
+                active1[1].classList.add('active-list');
+            }else if(`<%= subcategory %>`=='expcenter'){
+                active1[2].classList.add('active-list');
+            }
+        </script>
+    </div>
+    <!-- 원주 곤충마을 소개 탭  -->
+    <% } else if(category=='community'){ %>
+        <div class="nav-wrap">
+            <ul class="nav-list">
+                <li><a href="/noticePage"><span>공지사항</span></a></li>
+                <li><a href="/FAQPage"><span>자주하는 질문</span></a></li>
+                <li><a href="/QNAPage"><span>묻고 답하기</span></a></li>
+            </ul>
+            <script>
+                let active2=document.querySelectorAll('.nav-list>li>a>span');
+                if(`<%= subcategory %>`=='notice'){
+                    active2[0].classList.add('active-list');
+                }else if(`<%= subcategory %>`=='FAQ'){
+                    active2[1].classList.add('active-list');
+                }else if(`<%= subcategory %>`=='QNA'){
+                    active2[2].classList.add('active-list');
+                }
+            </script>
+        </div>
+        <!-- 원주 곤충마을 소개 탭  -->
+        <% } else if(category=='learning'){ %>
+            <div class="nav-wrap">
+                <ul class="nav-list">
+                    <li><a href="/learnPage"><span>곤충이란?</span></a></li>
+                    <li><a href="/learnrefPage"><span>곤충자료실</span></a></li>
+                    <li><a href="/stegPage"><span>사슴벌레</span></a></li>
+                    <li><a href="/beatlePage"><span>장수풍뎅이</span></a></li>
+                </ul>
+                <script>
+                    let active3=document.querySelectorAll('.nav-list>li>a>span');
+                    if(`<%= subcategory %>`=='learn'){
+                        active3[0].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='insectref'){
+                        active3[1].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='steg'){
+                        active3[2].classList.add('active-list');
+                    }else if(`<%= subcategory %>`=='beatle'){
+                        active3[4].classList.add('active-list');
+                    }
+                </script>
+            </div>
+            <!-- 원주 곤충마을 소개 탭  -->
+            <% } %>
