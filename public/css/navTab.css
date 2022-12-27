@@ -10,9 +10,11 @@ ul.nav-list{
     display: flex;
 
 }
-.nav-list>li{
-    width: 10%;
-    min-width: 128px;
+.nav-list>li {
+    flex: 1;
+    /* width: 10%; */
+    /* min-width: 128px; */
+    max-width: 128px;
 }
 .nav-list>li>a{
     display: block;
@@ -35,4 +37,10 @@ height: 100%;
     font-weight: bold;
     color: #749F82;
     border-bottom: 1px solid #749F82;
+}
+
+@media (max-width:768px) {
+    .nav-list>li>a>span {
+        font-size: 12px;
+    }
 }
