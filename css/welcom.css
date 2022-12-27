@@ -1,0 +1,29 @@
+.welcom_wrap {
+  text-align: center;
+}
+.welcom_img {
+  padding-top: 100px;
+  /* width: 420px; height: auto; */
+  /* display: inline-block; */
+}
+.welcom_main_txt {
+  padding-top: 50px;
+  font-size: 3.625rem;
+  color: #425f57;
+}
+.welcom_sub_txt {
+  padding-top: 10px;
+  font-size: 2rem;
+  color: #749f82;
+}
+.welcom_wrap > a {
+  display: block;
+  padding-top: 100px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #425f57;
+}
+.welcom_wrap > a:hover {
+  font-size: 1.125rem;
+  color: #749f82;
+}
