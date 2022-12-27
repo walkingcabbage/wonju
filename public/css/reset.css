@@ -45,3 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.m50px{
+	margin: 0 50px;
+}

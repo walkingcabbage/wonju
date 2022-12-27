@@ -107,12 +107,45 @@ a {
   color: #000 !important;
 }
 
-.imgBox1 {
+.tab1-1 {
   background-image: url('../img/imgBox1.jpg');
 }
+.tab1-2 {
+  background-image: url('../img/2.jpg');
+}
+.tab1-3 {
+  background-image: url('../img/3.jpg');
+}
+.tab1-4 {
+  background-image: url('../img/4.jpg');
+}
+.tab1-5 {
+  background-image: url('../img/5.jpg');
+}
+.tab1-6 {
+  background-image: url('../img/6.jpg');
+}
+.tab1-7 {
+  background-image: url('../img/7.jpg');
+}
+.tab1-8 {
+  background-image: url('../img/8.jpg');
+}
+.tab1-9 {
+  background-image: url('../img/9.jpg');
+}
 
-.imgBox2 {
+.tab2-1 {
+  background-image: url('../img/imgBox4.jpg');
+}
+.tab2-2 {
+  background-image: url('../img/10.jpg');
+}
+.tab2-3 {
   background-image: url('../img/imgBox2.jpg');
+}
+.tab2-4 {
+  background-image: url('../img/11.jpg');
 }
 
 .eImgBox {
@@ -124,13 +157,22 @@ a {
   background-size: cover;
   position: relative;
 }
+.eImgBox>.boxInner{
+}
+.eImgBox>.active{
+  display: initial;
+  bottom: 10%;
+  opacity: 1;
+}
 
 .boxInner {
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   left: 10%;
   right: 10%;
   word-break: keep-all;
+  opacity: 0;
+    transition: all 0.5s;
 
 }
 
@@ -209,15 +251,39 @@ a {
   color: #000 !important;
 }
 
-.imgBox3 {
+.tab3-1 {
   background-image: url('../img/imgBox3.jpg');
 }
+.tab3-2{
+  background-image: url('../img/12.jpg');
+}
+.tab3-3{
+  background-image: url('../img/13.jpg');
+}
+.tab3-4{
+  background-image: url('../img/14.jpg');
+}
+.tab3-5{
+  background-image: url('../img/15.jpg');
+}
 
-.imgBox4 {
+.tab4-1 {
   background-image: url('../img/imgBox4.jpg');
 }
-.imgBox5 {
+.tab4-2 {
+  background-image: url('../img/16.jpg');
+}
+.tab4-3 {
+  background-image: url('../img/17.jpg');
+}
+.tab5-1 {
   background-image: url('../img/imgBox5.jpg');
+}
+.tab5-2 {
+  background-image: url('../img/18.jpg');
+}
+.tab5-3 {
+  background-image: url('../img/19.jpg');
 }
 
 .pImgBox {
@@ -232,12 +298,19 @@ a {
 }
 
 .pboxInner {
+  /* display: none; */
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   left: 5%;
   right: 5%;
   word-break: keep-all;
-
+  opacity: 0;
+  transition: all 0.5s;
+}
+.pImgBox .active{
+  display: initial;
+  bottom: 10%;
+  opacity: 1;
 }
 
 .pboxTop {
