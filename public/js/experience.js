@@ -10,7 +10,7 @@ function getExpTabEvent() { //곤충체험 탭
 
             //탭 active 아이콘 반복문
             for(let j=0;j<tabBtn.length;j++){
-                tabBtn[j].classList.remove('activeLi');  
+                tabBtn[j].classList.remove('activeLi');
             }
             //탭 콘텐츠 변경 반복문
             for(let j=0;j<tabcon.length;j++){
@@ -27,7 +27,6 @@ function getExpTabEvent() { //곤충체험 탭
             tabimg.classList.add(e.target.dataset.tab);
         })
     }
-
 }
 function getFarmTabEvent() { //낙농체험 탭
     const tabBtn=document.querySelectorAll('#farm-tab>li>a');

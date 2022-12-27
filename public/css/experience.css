@@ -1,4 +1,3 @@
-@import url(reset.css);
 
 a {
   text-decoration: none;
@@ -65,7 +64,7 @@ a {
 }
 
 .eSubTit>p {
-  font-size: 24px;
+  font-size: 20px;
   color: #4F4F4F;
 }
 
@@ -99,6 +98,9 @@ a {
   background-repeat: no-repeat;
   color: #929292;
 
+}
+.eTab>ul>li>a:hover{
+  text-decoration: underline;
 }
 
 .activeLi {
@@ -244,6 +246,9 @@ a {
   text-align: center;
   font-size: 24px;
   color: #929292;
+}
+.pTab>ul>li>a:hover{
+  text-decoration: underline;
 }
 
 .pActive {
@@ -412,4 +417,85 @@ a {
 }
 .px16{
   font-size: 16px !important;
+}
+
+
+@media (max-width:1400px) {
+  .titWrap>h2 {
+    font-size: 40px;
+  }
+  .titCon {
+    font-size: 24px;
+}
+.eSubTit>p {
+  font-size: 16px;
+}
+.titBox .icons {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.eSubTit {
+  margin-left: 30px;
+}
+.eTab>ul {
+  gap: 0px;
+}
+.eTab {
+  height: 440px;
+}
+.eCon {
+  justify-content: space-around;
+  gap: 5%;
+  margin-top: 70px;
+}
+.eImgBox {
+  width: 50%;
+}
+.wrap {
+  width: auto;
+  max-width: 1280px;
+  margin: 150px 30px;
+}
+.pImgBox {
+  width: 80%;
+  height: 540px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.pTab>ul>li>a {
+  font-size: 20px;
+}
+.insure>strong {
+  font-size: 24px;
+  padding-top: 30px;
+}
+.insure>p {
+  font-size: 16px;
+  padding-top: 16px;
+}
+.insureCon {
+  width: 270px;
+  height: 140px;
+}
+.insureCon>strong {
+  font-size: 20px;
+}
+.insureCon>p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.insure {
+  height: 350px;
+}
+}
+
+
+@media (max-width:1024px) {
+  
+}
+
+
+@media (max-width:768px) {
+  
 }
