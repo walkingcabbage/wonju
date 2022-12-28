@@ -1,0 +1,197 @@
+
+.w1280 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.w420 {
+  width: 100%;
+  max-width: 414px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+/* 회원가입 타이틀*/
+.join_tit {
+  padding-top: 100px;
+  font-size: 3.625rem;
+  font-weight: bold;
+  color: #425f57;
+  display: flex;
+  justify-content: center;
+}
+/* 회원가입 타이틀 (정보입력)*/
+.join_sub_tit {
+  padding-top: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #749f82;
+}
+
+
+.welcom_wrap {
+  padding-top: 100px;
+  text-align: center;
+}
+.welcom_wrap > h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 60px;
+  color: #749f82;
+}
+/*  */
+#login_form > input {
+  width: 300px;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border: 2px solid #425f57;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+}
+#login_form > input[type="text"] {
+  padding-left: 20px;
+  font-size: 20px;
+}
+#login_form > input[type="password"] {
+  padding-left: 20px;
+  font-size: 20px;
+}
+#login_form > input::placeholder {
+  font-size: 16px;
+  color: #999999;
+}
+#login_form > input[type="submit"] {
+  width: 200px;
+  display: block;
+  margin: 0 auto 10px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #425f57;
+  cursor: pointer;
+}
+#login_form > input[type="submit"]:hover {
+  background-color: #749f82;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align:-4px;
+  outline: none !important;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  background: #fbfbfb;
+}
+input[type="checkbox"]::before {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+input[type="checkbox"]:hover {
+  border-color: #425f57;
+}
+input[type="checkbox"]:checked {
+  background-color: #749f82;
+  border-color: #425f57;
+  color: white;
+}
+input[type="checkbox"]:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+.login-join-wrap{
+  text-align: center;
+  color: #749f82;
+}
+.login-join-wrap a{
+  color: #749f82;
+}
+.simple_login {
+  padding-top: 20px;
+  text-align: center;
+}
+.simple_login>p{
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #999999;
+}
+.simple_login > ul {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.simple_login > ul > li {
+  padding-top: 20px;
+}
+.simple_login > h1 {
+  padding-top: 30px;
+  color: #749f82;
+  font-size: 23px;
+}
+.simple_login > h2 {
+  padding-top: 30px;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+}
+.simple_login > ul > li > a {
+  padding-top: 60px;
+  color: #999999;
+  font-weight: 500;
+}
+.kakao {
+  width: 52px;
+  display: block;
+  background-image: url(../img/kakao_login.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.google {
+  width: 52px;
+  display: block;
+  background-image: url(../img/google_login.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.naver {
+  width: 52px;
+  display: block;
+  background-image: url(../img/naver_login.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.find_login {
+  padding-top: 5px;
+}
+.id_find {
+  padding-top: 30px;
+  color: #425f57;
+  font-size: 16px;
+  font-weight: 500;
+}
+span {
+  color: #425f57;
+  font-size: 15px;
+}
+.pw_find {
+  padding-top: 30px;
+  color: #425f57;
+  font-size: 16px;
+  font-weight: 500;
+}

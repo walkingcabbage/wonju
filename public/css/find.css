@@ -1,0 +1,181 @@
+.find-user-wrap .top_label{
+  position: absolute;
+  top: 64px;
+}
+.find-user-wrap .bot_label{
+  position: absolute;
+  top: 700px;
+}
+.find-user-wrap .tab_finde{
+  position: absolute;
+  top: 250px; left: 50%;
+  transform: translate(-50%);
+}
+/*  */
+.find-user-wrap h1 {
+  padding-bottom: 15px;
+  font-size: 40px ;
+  text-align: center;
+  color: #425F57;
+}
+
+.find-user-wrap .join_wrap{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.find-user-wrap .tab_wrap{
+  padding-top: 30px;
+}
+.find-user-wrap .join_list{
+  padding-top: 50px;
+}
+.find-user-wrap .tab_btn{
+  padding: 0 80px;
+  border: 2px solid #749f82;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #749f82;
+}
+.find-user-wrap .main{
+  width: 414px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-top: 3px solid #749f82; */
+}
+.find-user-wrap .container{
+  position: relative;
+}
+.find-user-wrap .container>input{
+  width: 414px;
+  padding: 20px 10px;
+  border: 0 solid;
+  border-radius: 0;
+  border-bottom: 1px solid #749f82;;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.find-user-wrap #login{
+  padding: 5px 0;
+  margin-left: 142px;
+  margin-top: 30px;
+  width: 130px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #749f82;
+  color: #fff;
+  cursor: pointer;
+}
+/* #join .account{
+  padding: 5px 0;
+  margin: 30px auto 0;
+  width: 130px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #749f82;
+  color: #fff;
+  cursor: pointer;
+}
+.account {
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+} */
+
+/*  */
+.find-user-wrap .container > input[type="text"] {
+  padding-left: 20px;
+  font-size: 16px;
+}
+.find-user-wrap .container > input[type="password"] {
+  padding-left: 20px;
+  font-size: 16px;
+}
+.find-user-wrap #finde {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #425f57;
+  border: 2px solid #425F57;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.find-user-wrap #finde:hover {
+  background-color: #749f82;
+  border: 2px solid #425F57;
+  box-sizing: border-box;
+}
+.find-user-wrap .join_form p{
+  padding-top: 20px;
+  color: #749f82;
+}
+
+
+/*  */
+.find-user-wrap .tab_cont{
+  display: none;
+}
+.find-user-wrap .target{
+  display: block;
+}
+.find-user-wrap .tab_wrap{
+  width: 414px;
+  margin: 0 auto;
+}
+.find-user-wrap .tab_list{
+  display: flex;
+}
+.find-user-wrap .tab_list>li{
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.find-user-wrap .tab_li{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #749f82;
+  border-bottom: 3px solid #749f82;
+}
+
+.find-user-wrap .li_act{
+  border-bottom: 3px solid #425F57;
+  color: #425F57;
+}
+
+.find-user-wrap .tab_act{
+  color: #425F57 !important;
+}
+
+/* .finde_id{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #749f82;
+} */
+/* .finde_pw{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #749f82;
+} */
+.find-user-wrap .tab_wrap>div{
+  width: 100%; height: auto;
+}
+.find-user-wrap #tab2_txt{
+  display: none;
+}

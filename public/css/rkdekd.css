@@ -68,7 +68,6 @@
   margin: 10px 0px;
   letter-spacing: 10px;
 }
-
 .adt .hr-sect::before,
 .adt .hr-sect::after {
   content: "";

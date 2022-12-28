@@ -1,0 +1,90 @@
+.join2 form{
+  margin-top: 10px;
+}
+.join2 table{
+  margin: 0 auto;
+}
+.join2 td{
+  padding-top: 10px;
+}
+.join2 input{
+  width: 300px;
+  /* margin-top: 20px; */
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #425F57;
+}
+.join2 p{
+  font-size: 14px;
+  color: #888;
+}
+.deco{
+  font-size: 20px;
+  font-weight: 500;
+}
+.join2 input:focus {outline:none;}
+/* 버튼 */
+#id_check {
+  width: 100px; height: auto;
+  display: block;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #425f57;
+  border: 2px solid #425F57;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#id_check:hover {
+  background-color: #749f82;
+  border: 2px solid #425F57;
+  box-sizing: border-box;
+}
+#join_back {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  border-radius: 6px;
+  color: #749F82;
+  font-size: 16px;
+  background-color: #fff;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#join_back:hover {
+  color: #fff;
+  background-color: #749F82;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+}
+#join_ok {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #749F82;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#join_ok:hover {
+  color: #749F82;
+  background-color: #fff;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+}
+.join-submit-wrap{
+  display: flex;
+}
+.join-submit-wrap>input{
+  width: 45% !important;
+}
