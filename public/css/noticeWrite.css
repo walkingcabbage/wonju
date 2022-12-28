@@ -2,6 +2,12 @@
 .nw_title{
   text-align: center;
 }
+.nw_title h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 .nwinput_wrap{
   width: 50%;
   border-bottom: 2px solid #749F82;
@@ -25,7 +31,6 @@
   outline: 0; 
   border: 0;
   height: 0;
-  transition: all 0.3s;
 }
 #nw_select{
   width: 100%;
@@ -55,4 +60,8 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+.nw_star{
+  font-size: 24px;
+  text-align:center;
 }
