@@ -16,16 +16,11 @@
 @import url('./noticeList.css');
 @import url('./learn.css');
 @import url('./learnsasum.css');
-<<<<<<< HEAD
-@import url('./bespeak.css');
-@import url('./faq.css');
-
-=======
 @import url('./login.css');
 @import url('./join01.css');
 @import url('./join02.css');
 @import url('./find.css');
 @import url('./bespeak.css');
 @import url('./faq.css');
->>>>>>> a8a3011e13d7a30399da56f7f8669facc566d1a5
+@import url('./noticeWrite.css');
 /* @import url('./sub_hf.css'); */

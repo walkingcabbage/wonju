@@ -120,7 +120,7 @@ section.expc {
   font-size: 1.25rem;
   text-align: left;
   position: absolute;
-  bottom: -15px; left: 49.98%;
+  bottom: -17px; left: 49.98%;
   transform: translate(-50%, -10%);
   animation: fadeInUp 1s;
 }

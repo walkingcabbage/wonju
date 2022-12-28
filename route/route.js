@@ -38,14 +38,6 @@ router.get('/campPage', function (req, res) {
     subcategory:'camp',
   });
 })
-<<<<<<< HEAD
-router.get('/bespeakPage', function (req, res) {
-  res.render('bespeak', {
-    subHeader: true,
-    subFooter:true,
-    category:'program',
-    subcategory:'camp',
-=======
 router.get('/bookingPage', function (req, res) {
   res.render('bespeak', {
     subHeader: true,
@@ -53,7 +45,6 @@ router.get('/bookingPage', function (req, res) {
         isHF:true,
     category:'program',
     subcategory:'booking',
->>>>>>> a8a3011e13d7a30399da56f7f8669facc566d1a5
   });
 })
 router.get('/lodgingPage', function (req, res) {
@@ -85,6 +76,15 @@ router.get('/expcenterPage', function (req, res) {
 })
 router.get('/noticePage', function (req, res) {
   res.render('noticeList', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'notice',
+  });
+})
+router.get('/noticeWrite', function (req, res) {
+  res.render('noticeWrite', {
     subHeader: true,
     subFooter:true,
         isHF:true,
