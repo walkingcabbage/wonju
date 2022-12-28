@@ -1,0 +1,49 @@
+<div>
+  <section class="section_noticeWrite mar150">
+    <div class="fu_title">
+      <h2>문의사항 수정하기</h2>
+      <span>문의 할 사항을 작성 하실 수 있는 페이지 입니다.</span>
+    </div>
+    <article class="fu_write">
+      <div class="fuinput_wrap">
+        <button class="fu_button">
+          <label for="name">성함 <span class="nw_star">*</span></label>
+        </button>
+        <input class="fu_input put_name" type="text" name="name">
+      </div>
+      <div class="fuinput_wrap">
+        <button class="fu_button">
+          <label for="title">제목 <span class="fu_star">*</span></label>
+        </button>
+        <input class="fu_input put_email" type="text" name="email">
+      </div>
+      <div class="fuinput_wrap">
+        <button class="fu_button">
+          <label for="number">전화번호 <span class="fu_star">*</span></label>
+        </button>
+        <input class="fu_input put_num" type="text" name="number">
+      </div>
+      <div class="fuinput_wrap">
+        <button class="fu_button">
+          <label for="experience">문의 할 항목 <span class="fu_star">*</span></label>
+        </button>
+        <div class="fu_ul">
+          <select name="programe" id="">
+            <option value="">곤충체험 프로그램</option>
+            <option value="">낙농체험 프로그램</option>
+            <option value="">벅스드론 프로그램</option>
+            <option value="">단체체험 프로그램</option>
+          </select>
+        </div>
+      </div>
+      <div class="fuinput_wrap">
+        <label for="futext">문의내용 <span class="fu_star">*</span></label>
+        <textarea class="fu_text" cols="50" rows="10" name="futext"></textarea>
+      </div>
+    </article>
+    <div class="fu_check">
+      <input type="submit" value="작성하기" class="fu_submit">
+    </div>
+  </section>
+</div>
+<script src="js/faqUpdate.js"></script>
