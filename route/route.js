@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const db = require('./../db.js');
 
 router.get('/', function (req, res) {
   res.render('index', {
@@ -11,6 +11,7 @@ router.get('/', function (req, res) {
     subcategory:'main',
   });
 })
+
 router.get('/introPage', function (req, res) {
   res.render('intro', {
     subHeader: true,
@@ -20,6 +21,7 @@ router.get('/introPage', function (req, res) {
     subcategory:'intro',
   });
 })
+
 router.get('/expPage', function (req, res) {
   res.render('experience', {
     subHeader: true,
@@ -83,8 +85,8 @@ router.get('/noticePage', function (req, res) {
     subcategory:'notice',
   });
 })
-router.get('/faqWrite', function (req, res) {
-  res.render('faqWrite', {
+router.get('/noticeWritePage', function (req, res) {
+  res.render('noticeWrite', {
     subHeader: true,
     subFooter:true,
         isHF:true,
@@ -92,8 +94,8 @@ router.get('/faqWrite', function (req, res) {
     subcategory:'notice',
   });
 })
-router.get('/faqUpdate', function (req, res) {
-  res.render('faqUpdate', {
+router.get('/noticeReadPage', function (req, res) {
+  res.render('noticeRead', {
     subHeader: true,
     subFooter:true,
         isHF:true,
@@ -112,6 +114,15 @@ router.get('/FAQPage', function (req, res) {
 })
 router.get('/QNAPage', function (req, res) {
   res.render('QNA', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'QNA',
+  });
+})
+router.get('/QNAReadPage', function (req, res) {
+  res.render('QNARead', {
     subHeader: true,
     subFooter:true,
         isHF:true,
