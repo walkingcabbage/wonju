@@ -12,7 +12,7 @@
                         <option value="user" >글쓴이</option>
                     </select>
                     <input class="textbox" type="text" placeholder="검색어를 입력해주세요">
-                    <input class="searchBtn" type="submit" name="" id="">
+                    <input class="searchBtn" type="submit" name="" id="" value="검색">
                 </form>
             </div>
         </section>
@@ -27,18 +27,14 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% rows.forEach((row,index) => { %>
                     <tr>
-                        <td>1</td>
-                        <td class="table-title"><a href="">횡성초교병설유치원</a></td>
-                        <td>2022-12-08</td>
-                        <td>35</td>
+                        <td><%= row.id %></td>
+                        <td class="table-title"><a href="/noticeReadPage?id=<%= row.id %>"><%= row.title %></a></td>
+                        <td><%= row.create_time %></td>
+                        <td><%= row.views %></td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="table-title"><a href="">횡성초교병설유치원</a></td>
-                        <td>2022-12-08</td>
-                        <td>35</td>
-                    </tr>
+                    <% }); %>
                 </tbody>
             </table>
         </section>

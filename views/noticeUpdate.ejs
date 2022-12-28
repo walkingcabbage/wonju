@@ -6,16 +6,17 @@
             </div>
         </section>
         <section class="notice-write-middle">
-            <form class="notice-write-form" action="">
+            <form class="notice-write-form" action="/updates" method="post">
+                <input type="hidden" value="<%= row.id %>" name="id" id="id">
                 <div class="tit-box">
                     <p>제목</p>
-                    <input type="text">
+                    <input type="text" name="title" value="<%= row.title %>">
                 </div>
                 <div class="content-box">
                     <p>내용</p>
-                    <textarea name="" id="" cols="30" rows="10" ></textarea>
+                    <textarea name="content" id=""><%= row.content %></textarea>
                 </div>
-                <button class="btns">돌아가기</button>
+                <button onclick="location.href='/noticePage'" class="btns">돌아가기</button>
                 <input class="btns" type="submit" value="저장">
             </form>
         </section>
