@@ -34,6 +34,14 @@ router.get('/campPage', function (req, res) {
     subcategory:'camp',
   });
 })
+router.get('/bespeakPage', function (req, res) {
+  res.render('bespeak', {
+    subHeader: true,
+    subFooter:true,
+    category:'program',
+    subcategory:'camp',
+  });
+})
 router.get('/lodgingPage', function (req, res) {
   res.render('lodging', {
     subHeader: true,
@@ -67,7 +75,7 @@ router.get('/noticePage', function (req, res) {
   });
 })
 router.get('/FAQPage', function (req, res) {
-  res.render('noticeList', {
+  res.render('faq', {
     subHeader: true,
     subFooter:true,
     category:'community',

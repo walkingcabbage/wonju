@@ -1,5 +1,7 @@
 .mar150 {
-  margin-bottom: 150px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 150px auto;
 }
 
 .booking_subtitle {
