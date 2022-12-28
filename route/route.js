@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const db = require('./../db.js');
 
 router.get('/', function (req, res) {
   res.render('index', {
@@ -11,6 +11,7 @@ router.get('/', function (req, res) {
     subcategory:'main',
   });
 })
+
 router.get('/introPage', function (req, res) {
   res.render('intro', {
     subHeader: true,
@@ -20,6 +21,7 @@ router.get('/introPage', function (req, res) {
     subcategory:'intro',
   });
 })
+
 router.get('/expPage', function (req, res) {
   res.render('experience', {
     subHeader: true,
