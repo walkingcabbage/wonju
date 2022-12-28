@@ -92,6 +92,15 @@ router.get('/faqWrite', function (req, res) {
     subcategory:'notice',
   });
 })
+router.get('/faqUpdate', function (req, res) {
+  res.render('faqUpdate', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'notice',
+  });
+})
 router.get('/FAQPage', function (req, res) {
   res.render('faq', {
     subHeader: true,

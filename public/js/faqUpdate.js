@@ -1,8 +1,8 @@
-let nwBtn = document.querySelectorAll(".nw_button");
-let Nu = document.querySelector(".nw_ul");
-let Nw = document.querySelectorAll(".nwinput_wrap");
+let nwBtn = document.querySelectorAll(".fu_button");
+let Nu = document.querySelector(".fu_ul");
+let Nw = document.querySelectorAll(".fuinput_wrap");
 
-function accor(){
+function fuAccor(){
   for (i = 0; i < nwBtn.length; i++) {
     nwBtn[i].addEventListener("click", function() {
       this.classList.toggle("act");
@@ -15,4 +15,4 @@ function accor(){
     });
   }
 }
-accor();
+fuAccor();
