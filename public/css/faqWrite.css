@@ -1,14 +1,14 @@
 
-.nw_title{
+.fw_title{
   text-align: center;
 }
-.nw_title h2{
+.fw_title h2{
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.nwinput_wrap{
+.fwinput_wrap{
   width: 50%;
   border-bottom: 2px solid #749F82;
   margin: auto;
@@ -16,27 +16,23 @@
   margin: 15px auto;
 }
 
-.nw_button{
+.fw_button{
   background-color:#ffffff;
   border: none;
   margin-bottom: 10px;
 }
-.nwinput_wrap label{
+.fwinput_wrap label{
   display: block;
   cursor: pointer;
 }
-.nw_input{
+.fw_input{
   display: block;
   width:100%;
   outline: 0; 
   border: 0;
   height: 0;
 }
-#nw_select{
-  width: 100%;
-  padding: 5px;
-}
-.nw_text{
+.fw_text{
   width: 100%;  height: 50%;
   background-color: #eeeeee;
   border: 0;
@@ -45,15 +41,15 @@
   font-size: 15px;
   padding: 15px;
 }
-.nw_ul{
+.fw_ul{
   margin-bottom: 10px;
 }
-.nw_check{
+.fw_check{
   display: flex;
   justify-content: center;
   margin-top: 35px;
 }
-.nw_submit{
+.fw_submit{
   display: block;
   border: none;
   outline: 0;
@@ -61,7 +57,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.nw_star{
+.fw_star{
   font-size: 24px;
   text-align:center;
 }

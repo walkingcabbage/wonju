@@ -83,8 +83,8 @@ router.get('/noticePage', function (req, res) {
     subcategory:'notice',
   });
 })
-router.get('/noticeWrite', function (req, res) {
-  res.render('noticeWrite', {
+router.get('/faqWrite', function (req, res) {
+  res.render('faqWrite', {
     subHeader: true,
     subFooter:true,
         isHF:true,
