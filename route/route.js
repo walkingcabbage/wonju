@@ -83,13 +83,8 @@ router.get('/noticePage', function (req, res) {
     subcategory:'notice',
   });
 })
-<<<<<<< HEAD
-router.get('/faqWrite', function (req, res) {
-  res.render('faqWrite', {
-=======
 router.get('/noticeWritePage', function (req, res) {
   res.render('noticeWrite', {
->>>>>>> 6d48091 (공지사항 작성 및 수정페이지 추가)
     subHeader: true,
     subFooter:true,
         isHF:true,
@@ -97,13 +92,8 @@ router.get('/noticeWritePage', function (req, res) {
     subcategory:'notice',
   });
 })
-<<<<<<< HEAD
-router.get('/faqUpdate', function (req, res) {
-  res.render('faqUpdate', {
-=======
 router.get('/noticeReadPage', function (req, res) {
   res.render('noticeRead', {
->>>>>>> 6d48091 (공지사항 작성 및 수정페이지 추가)
     subHeader: true,
     subFooter:true,
         isHF:true,
