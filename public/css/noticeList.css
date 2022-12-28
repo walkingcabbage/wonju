@@ -1,5 +1,6 @@
 .notice-wrap{
     width: 100%;
+    margin-bottom: 150px;
 }
 
 .notice-holder{
@@ -54,7 +55,7 @@ display: inline-block;
 .notice-table{
     width: 100%;
     border-top: 2px solid #000;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 .notice-table thead{
     background-color: rgb(238, 238, 238);
@@ -75,4 +76,25 @@ text-decoration: underline;
 }
 .notice-table tbody tr:hover{
     background-color: rgb(245, 245, 245);
+}
+.list-pagination-wrap{
+    text-align: center;
+}
+.list-pagination-wrap>span{
+    font-weight: bold;
+}
+.list-btn-wrap{
+    text-align: right;
+}
+.list-btn-wrap>.write-btn{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color:#425F57;
+    color: #fff;
+    /* border-radius: 5px; */
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.list-btn-wrap>.write-btn:hover{
+    background-color: #2e4941;
 }

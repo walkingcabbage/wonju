@@ -1,0 +1,76 @@
+.notice-write-wrap{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.notice-write-top{
+    text-align: center;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.notice-write-top .top-box{
+    padding: 50px 0;
+}
+.notice-write-top .top-box .title{
+    font-weight: bold;
+    font-size: 36px;
+}
+.notice-write-middle{
+    width: 100%;
+    padding: 0 30px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.notice-write-middle .notice-write-form{
+    width: 100%;
+}
+.notice-write-middle .notice-write-form .tit-box{
+    margin-bottom: 10px;
+}
+.notice-write-middle .notice-write-form .tit-box input{
+    width: 50%;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.notice-write-middle .notice-write-form .tit-box input:focus{
+    outline: none;
+    border: 1px solid rgb(143, 143, 143);
+    background-color: #eee;
+}
+.notice-write-middle .notice-write-form .content-box textarea{
+    width: 80%;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: all 0.3s;
+}
+.notice-write-middle .notice-write-form .content-box textarea:focus{
+    outline: none;
+    border: 1px solid rgb(143, 143, 143);
+    background-color: #eee;
+}
+
+.notice-write-middle .notice-write-form .content-box{
+    margin-bottom: 20px;
+}
+
+.notice-write-form p{
+    margin-bottom: 5px;
+}
+.notice-write-form .btns{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #425F57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}

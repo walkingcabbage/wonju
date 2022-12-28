@@ -83,6 +83,24 @@ router.get('/noticePage', function (req, res) {
     subcategory:'notice',
   });
 })
+router.get('/noticeWritePage', function (req, res) {
+  res.render('noticeWrite', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'notice',
+  });
+})
+router.get('/noticeReadPage', function (req, res) {
+  res.render('noticeRead', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'notice',
+  });
+})
 router.get('/FAQPage', function (req, res) {
   res.render('faq', {
     subHeader: true,
@@ -94,6 +112,15 @@ router.get('/FAQPage', function (req, res) {
 })
 router.get('/QNAPage', function (req, res) {
   res.render('QNA', {
+    subHeader: true,
+    subFooter:true,
+        isHF:true,
+    category:'community',
+    subcategory:'QNA',
+  });
+})
+router.get('/QNAReadPage', function (req, res) {
+  res.render('QNARead', {
     subHeader: true,
     subFooter:true,
         isHF:true,
