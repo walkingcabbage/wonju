@@ -1,27 +1,27 @@
-section.expc {
-  /* margin: 150px 0; */
-<<<<<<< HEAD
+body {
   max-width: 1400px;
   margin: 0 auto;
-=======
-  max-width: 1280px;
-  margin: 150px auto;
->>>>>>> origin/gyeowoon
+  background-color: #eee;
+}
+
+section {
+  /* margin: 150px 0; */
   position: relative;
   padding-top: 75px;
   padding-bottom: 145px;
 }
-.expc img{
-<<<<<<< HEAD
+img{
   width: 85%;
   height: 675px;
   border-radius: 10px;
   padding: 6px 0 12px;
-=======
-  width: 100%;
-  height: 680px;
->>>>>>> origin/gyeowoon
   object-fit: cover;
+}
+marquee>img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
 }
 
 .hr-sect {
@@ -46,7 +46,6 @@ section.expc {
   margin: 0px 20px;
 }
 
-<<<<<<< HEAD
 .sub_tit{
   display: flex;
   justify-content: space-between;
@@ -132,75 +131,6 @@ section.expc {
   color: #000;
   font-weight: bold;
   transition: all 1.5s ease-in-out;
-=======
-.expc_subtitle{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 55px;
-}
-.expc_leaf {
-  font-size: 2rem;
-  font-weight: 700;
-  padding-left: 2rem;
-  background-image: url(../img/icon_leaf.png);
-  background-position: left center;
-  background-size: 32px;
-  background-repeat: no-repeat;
-}
-
-.expc_line {
-  display: block;
-  width: 87%;
-  height: 1px;
-  background-color: #222;
-  margin: 0.75rem;
-}
-.el_1{
-  display: none;
-}
-
-.expc_btnwrap {
-  display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  border-left: 1px solid #749F82;
-  border-top: 1px solid #749F82;
-}
-
-.expc_btnwrap li{
-  border-right: 1px solid #749F82;
-  border-bottom: 1px solid #749F82;
-  flex : 1;
-  text-align: center;
-}
-
-.expc_imgwrap{
-  width: 100%;height: 100%;
-  position: relative;
-}
-.expc_imgwrap::before {
-  content: "";
-  width: 100%; height: 680px;
-  background-color: #749F82;
-  position: absolute;
-  bottom: -50px; left: -20%;
-}
-
-.tab_txt {
-  display: block;
-  font-size: 1.5rem;
-  color: #999;
-  cursor: pointer;
-  transition: all 0.5s;
-  line-height: 81px;
-}
-
-.tabs.active, .tablinks2.active{
-  color: #ffffff;
-  font-weight: bold; 
-  background-color: #749F82;
->>>>>>> origin/gyeowoon
 }
 
 .tabcont,
@@ -214,7 +144,6 @@ section.expc {
   display: none;
   color: #ffffff;
   background-color: rgb(0, 0, 0, 0.5);
-<<<<<<< HEAD
   width: 85%;
   padding: 3rem 0;
   padding-left: 100px;
@@ -224,19 +153,6 @@ section.expc {
   text-align: left;
   animation: fadeInUp 1s;
 }
-=======
-  width: 100%;
-  padding: 32px;
-  box-sizing: border-box;
-  font-size: 1.25rem;
-  text-align: left;
-  position: absolute;
-  bottom: -15px; left: 49.98%;
-  transform: translate(-50%, -10%);
-  animation: fadeInUp 1s;
-}
-
->>>>>>> origin/gyeowoon
 @keyframes fadeInUp {
   0% {
       opacity: 0;
@@ -247,7 +163,6 @@ section.expc {
       transform: translateZ(100%);
   }
 }
-<<<<<<< HEAD
 .tabcont:hover .tabcont_txt{
   display: inline-block;
   position: absolute;
@@ -277,66 +192,5 @@ section.expc {
   }
   .tab_txt{
     font-size: 1.25rem;
-=======
-
-.tabcont:hover .tabcont_txt{
-  display: block;
-}
-.tabcont2:hover .tabcont_txt {
-  display: block;
-
-}
-.tabcont_txt>p{
-  font-size: 1.75rem;
-}
-
-@media (max-width:1400px) {
-  .expc_leaf{
-    font-size: 26px;
-    background-size: 26px;
-  }
-  .tabcont_txt{
-    bottom: -15px;
-  }
-}
-
-@media (max-width:1024px) {
-  .expc_leaf{
-    font-size: 22px;
-    background-size: 24px;
-  }
-  .expc_line{
-    width: 40%;
-  }
-  .el_1{
-    display: block;
-  }
-  .tab_txt{
-    font-size: 18px;
-  }
-}
-@media (max-width:768px) {
-  .expc img{
-    height: 380px;
-  }
-  .expc_leaf{
-    font-size: 18px;
-    background-size: 20px;
-    padding-left:1.5rem;
-  }
-  .expc_imgwrap::before{
-    display: none;
-  }
-  .expc_line{
-    width: 35%;
-  }
-  .tab_txt{
-    font-size: 14px;
-  }
-  .tabcont_txt{
-    display: block;
-    bottom: -15px;
-    font-size: 18px;
->>>>>>> origin/gyeowoon
   }
 }

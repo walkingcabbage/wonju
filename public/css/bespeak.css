@@ -1,0 +1,506 @@
+.mar150 {
+  margin-bottom: 150px;
+}
+
+.booking_subtitle {
+  margin-bottom: 100px;
+}
+
+.booking_subtitle>h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.booking_subtitle>p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.insectbook_title {
+  margin-bottom: 30px;
+}
+
+.insectbook_title>h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.rhscnd_tit {
+  margin-bottom: 50px;
+}
+
+.rhscnd_tit>h2 {
+  margin-bottom: 10px;
+}
+
+.rhscnd_tit>p {
+  font-size: 18px;
+}
+
+.dpdirtitle_wrap {
+  margin-bottom: 50px;
+}
+
+.tkdwk {
+  width: 100%;
+  height: 10px;
+  background-color: #749F82;
+}
+
+.book_cover {
+  margin: 150px 0;
+  position: relative;
+}
+
+.book_wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 15px;
+}
+
+.book_wrap li {
+  width: 30%;
+  line-height: 1.5;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book_wrap li h4 {
+  margin-bottom: 30px;
+}
+
+.book_wrap li:hover {
+  background-color: rgba(226, 223, 223, 0.5);
+  border-radius: 5px;
+}
+
+/* follow */
+
+/* .circle { 
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  background-color: rgba(155, 240, 18, 0.5); 
+  transform: translate(-50%, -50%);
+} */
+
+.a1.hold {
+  color: #fff;
+  background-color: #749F82;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.a1.hold:hover {
+  background-color: #749F82;
+}
+
+.tnsck {
+  margin: 0 25px;
+  width: 45%;
+}
+
+.tnsck li {
+  margin-bottom: 30px;
+}
+
+/* correc start*/
+.correc_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0 30px;
+}
+
+.correc_title {
+  margin-bottom: 35px;
+}
+
+.correc_title>h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.correc_list>ul>li {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.correc_list h4 {
+  padding-right: 10px;
+}
+
+.correc_list span {
+  padding-right: 10px;
+}
+
+/* 달력 */
+.calender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pose {
+  width: 60%;
+}
+
+.dateTitle {
+  font-size: 24px;
+}
+
+.dateHead div {
+  background: #749F82;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.grid div {
+  padding: .6rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.dateBoard div {
+  color: #222;
+  font-weight: bold;
+  min-height: 6rem;
+  padding: .6rem .8rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.noColor {
+  background: #eee;
+}
+
+.calender_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 0 50px;
+}
+
+/* 좌우 버튼 */
+.btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.prevDay {
+  transform: rotate(-135deg);
+}
+
+.nextDay {
+  transform: rotate(45deg);
+}
+
+/* ---- */
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Pretendard;
+}
+
+.rap {
+  width: 100%;
+  padding: 0 1.4rem;
+}
+
+.dateHead {
+  margin: .4rem 0;
+}
+
+/* date select start */
+.date_select {
+  width: 40%;
+}
+
+.d_stitle {
+  margin-bottom: 40px;
+}
+
+.d_stitle>h1 {
+  text-align: center;
+  font-size: 32px;
+  font-size: bold;
+}
+
+.date_tbl {
+  margin: 0 auto;
+}
+
+.date_tbl th {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.date_tbl td {
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+}
+
+.date_year {
+  width: 60%;
+  text-align: center;
+}
+
+.date_time {
+  width: 20%;
+  text-align: center;
+}
+
+.date_btn {
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.date_btn:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.display_none {
+  display: none;
+}
+
+.au_pubg {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px
+}
+
+.au_push {
+  width: 50%;
+  margin: 30px 0 35px;
+}
+
+.au_wrap {
+  margin-bottom: 15px;
+}
+
+.au_label {
+  display: block;
+  margin: 10px 0;
+}
+
+.au_input {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+
+.au_input:focus {
+  outline: 0;
+}
+
+.au_guidelines {
+  width: 50%;
+  margin: 30px 0 35px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #222222;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+
+.gl_subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.gl_list li {
+  margin-bottom: 35px;
+}
+
+.gl_h4 {
+  margin-bottom: 10px;
+}
+
+.last_guide {
+  font-size: 18px;
+  font-weight: bold;
+  color: #970119;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.last_guide p {
+  text-decoration: underline;
+}
+
+/* snowflake  */
+.snowflake {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+}
+
+@keyframes fall {
+  from {}
+
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* max-width : 1280 */
+@media (max-width:1200px) {
+  .book_wrap li h4 {
+    margin-bottom: 10px;
+  }
+
+  .calender {
+    flex-direction: column;
+  }
+
+  .pose {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .calender_header {
+    margin: 0 50px;
+  }
+
+  .date_select {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .d_stitle>h1 {
+    font-size: 28px;
+  }
+
+  .booking_subtitle>h1 {
+    font-size: 28px;
+  }
+
+  .booking_subtitle>p {
+    font-size: 16px;
+  }
+
+  .last_guide p {
+    font-size: 24px;
+    text-decoration: underline;
+    line-height: 32px;
+  }
+}
+
+@media (max-width:900px) {
+  .insectbook_title h2 {
+    font-size: 20px;
+  }
+
+  .insectbook_title span {
+    font-size: 14px;
+  }
+  .insect_p{
+    display: none;
+  }
+  .book_wrap>li {
+    width: 45%;
+  }
+  .insect_package{
+    font-size: 14px;
+  }
+  .correc_title>p{
+    font-size: 14px;
+  }
+  .tnsck {
+    margin: 0 5px;
+  }
+
+  .correc_list span{
+    padding-right: 0;
+  }
+  .cl_txt{
+    font-size: 14px;
+  }
+  .dateBoard div {
+    min-height: 4rem;
+  }
+  .d_stitle>h1 {
+    font-size: 24px;
+  }
+  .calender_header {
+    margin: 0 10px;
+  }
+  .booking_subtitle>h1 {
+    font-size: 24px;
+  }
+  .au_pubg {
+    flex-direction: column-reverse;
+  }
+  .au_label {
+    text-align: center;
+  }
+  .au_push {
+    width: 100%;
+  }
+  .au_guidelines {
+    width: 100%;
+  }
+}
+
+@media (max-width : 450px) {
+  .dateBoard div {
+    min-height: 2rem;
+    padding: 0.6rem;
+  }
+
+  .booking_subtitle>h1 {
+    font-size: 20px;
+  }
+
+  .booking_subtitle>p {
+    font-size: 14px;
+  }
+
+  .d_stitle>h1 {
+    font-size: 20px;
+  }
+  .insect_package{
+    font-size: 12px;
+  }
+  .faq_cancel{
+    display: none;
+  }
+}

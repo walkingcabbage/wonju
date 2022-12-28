@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .wlflfl {
   width: 50px;
   height: 50px;
@@ -9,6 +10,12 @@
   z-index: 10000000000;
 }
 
+=======
+main{
+  position: relative;
+  z-index: 1;
+}
+>>>>>>> origin/gyeowoon
 .hr-sect {
   display: flex;
   flex-basis: 100%;
@@ -30,16 +37,31 @@
   line-height: 0px;
   margin: 0px 20px;
 }
+<<<<<<< HEAD
 
 .line_tit{
   display: inline-block;
   width: 80%; height: 1px;
   border-bottom: 1px solid;
+=======
+.quarter_line1{
+  display: none;
+  height: 1px;
+  background-color: #222222;
+  margin: 0.75rem;
+}
+.quarter_line2{
+  display: inline-block;
+  width: 85%; 
+  height: 1px;
+  background-color: #222222;
+>>>>>>> origin/gyeowoon
   margin: 0.75rem;
 }
 
 /* common START*/
 
+<<<<<<< HEAD
 section.sukso {
   max-width: 1400px;
   margin: 100px auto;
@@ -56,6 +78,24 @@ section.sukso {
   height: 675px;
   margin: 0 auto;
   border-radius: 10px;
+=======
+.quarter {
+  max-width: 1280px;
+  width: 100%; height: 100%;
+  margin: 150px auto;
+  padding-bottom:100px;
+  box-sizing: border-box;
+}
+
+.qt_p {
+  font-size: 1.2rem;
+}
+
+.quarter_img {
+  width: 100%;
+  height: 675px;
+  margin: 0 auto;
+>>>>>>> origin/gyeowoon
   object-fit: cover;
 }
 
@@ -63,6 +103,7 @@ section.sukso {
 
 
 /* Style the tab content */
+<<<<<<< HEAD
 .sukso .tabcontent,
 .sukso .tabcontent2{
   display: none;
@@ -208,11 +249,101 @@ section.sukso {
 
 .sukso .tabcontent,
 .sukso .tabcont2 {
+=======
+.quarter .tabcontent,
+.quarter.tabcontent2{
+  display: none;
+  border-top: none;
+}
+
+.quarter  {
+  margin-bottom: 100px;
+}
+.quarter_titlewrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+.quarter_leaf {
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 2.75rem;
+  background-image: url(../img/icon_leaf.png);
+  background-position: left center;
+  background-size: 32px;
+  background-repeat: no-repeat;
+}
+.quarterimg_wrap{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.quartertab_wrap{
+  position: relative;
+}
+
+.quartertab_menu {
+  display: flex;
+  justify-content: center;
+  border-top : 1px solid #749F82;
+  border-left : 1px solid #749F82;
+  box-sizing: border-box;
+}
+.quartertab_menu li {
+  font-size: 24px;
+  text-align: center;
+  white-space: nowrap;
+  flex: 1;
+  color: #999;
+  line-height: 81px;
+  cursor : pointer;
+  transition: all 0.5s;
+}
+.tab_item{
+  box-sizing: border-box;
+  border-right : 1px solid #749F82;
+  border-bottom : 1px solid #749F82;
+}
+.tab_item.tablinks.active{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #749F82;
+}
+.tab_item.tablinks2.on {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #749F82;
+}
+
+.quarter.three .qtlist_wrap {
+  margin-left: 220px;
+}
+
+.quarter.three .qtlist_wrap li {
+  line-height: 32px;
+}
+
+.quarter.four .qtlist_wrap {
+  margin-left: 220px;
+}
+
+.quarter.four .qtlist_wrap li {
+  line-height: 32px;
+}
+
+.quarter .tabcontent,
+.quarter .tabconent2 {
+>>>>>>> origin/gyeowoon
   display: none;
   position: relative;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .sukso .tabcont_txt {
   display: none;
   color: #ffffff;
@@ -223,6 +354,20 @@ section.sukso {
   border-radius: 8px;
   font-size: 1.25rem;
   text-align: left;
+=======
+.quartertabcont_txt {
+  display: none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  text-align: left;
+  position:absolute;
+  bottom: -34px; left: 50%;
+  transform: translate(-50%,-20%);
+>>>>>>> origin/gyeowoon
   animation: fadeInUp 1s;
 }
 @keyframes fadeInUp {
@@ -235,6 +380,7 @@ section.sukso {
       transform: translateZ(100%);
   }
 }
+<<<<<<< HEAD
 .sukso .tabcontent:hover .tabcont_txt{
   display: inline-block;
   position: absolute;
@@ -249,11 +395,22 @@ section.sukso {
 }
 .sukso .tab_tit{
   font-size:   1.75rem;
+=======
+.quarter .tabcontent:hover .quartertabcont_txt{
+  display: block;
+}
+.quarter .tabcontent2:hover .quartertabcont_txt {
+  display: block;
+}
+.tab_tit{
+  font-size:1.75rem;
+>>>>>>> origin/gyeowoon
   margin-bottom: 30px;
 }
 
 /* before */
 
+<<<<<<< HEAD
 .sukso .img_wrap::before{
   content: "";
   width: 100%; height: 100%;
@@ -305,3 +462,131 @@ section.sukso {
     margin-left: 120px;
   }
 }
+=======
+.quarterimg_wrap::before{
+  content: "";
+  width: 100%; 
+  height: 680px;
+  background-color: #749F82;
+  position: absolute;
+  bottom: -50px; left: -20%;
+  z-index: -50;
+}
+
+@media (max-width:1400px){
+  .quarter_leaf{
+    font-size: 26px;
+    padding-left: 2rem;
+    background-size: 26px 26px;
+
+  }
+  .quartertab_menu li{
+    font-size: 18px;
+  }
+  .tab_item.tablinks.active{
+    font-size: 18px;
+  }
+  .tab_item.tablinks2.on {    
+    font-size: 18px;
+  }
+}
+
+@media (max-width:1024px){
+  .qt_p{
+    font-size: 18px;
+  }
+  .quarter_titlewrap{
+    text-align: center;
+  }
+  .quarter_leaf{
+    font-size: 22px;
+    padding-left: 1.75rem;
+    background-size: 22px 22px;
+  }
+  .quarter_line1{
+    display: block;
+    width: 38%;
+  }
+  .quarter_line2{
+    width: 38%;
+  }
+  .quartertab_menu{
+    padding: 0;
+  }
+  .quartertab_menu li{
+    font-size: 16px;
+  }
+  .tab_item.tablinks.active{
+    font-size:16px;
+    }
+  .tab_item.tablinks2.on {    
+    font-size:16px;
+  }
+  .quarter.three .list_wrap{
+    margin-left: 120px;
+  }
+  .quarter.four .list_wrap{
+    margin-left: 120px;
+  }
+}
+
+@media (max-width:768px) {
+  .qt_p{
+    font-size: 15px;
+  }
+  .tab_tit{
+    font-size: 20px;
+  }
+  .quarter_img{
+    height: 375px;
+  }
+  .quarter_leaf{
+    font-size: 18px;
+    padding-left:1.3rem;
+    background-size: 18px;
+  }
+  .quarter_line1{
+    width: 36%;
+  }
+  .quarter_line2{
+    width: 36%;
+  }
+  .quartertab_menu{
+    flex-wrap: wrap;
+  }
+  .quartertab_menu li {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .quarterimg_wrap::before{
+    display: none;
+    left: 0;
+  }
+  .quartertabcont_txt{
+    display: block;
+    bottom: -28px;
+  }
+}
+@media (max-width:500px) {
+  .quarter_img{
+    height: 375px;
+  }
+  .quarterimg_wrap::before{
+    display: none;
+  }
+  .quarter_line1{
+    width: 25%;
+  }
+  .quarter_line2{
+    width: 25%;
+  }
+
+  .quarterimg_wrap::before{
+    display: none;
+  }
+  .quartertabcont_txt{
+    display: block;
+  }
+}
+
+>>>>>>> origin/gyeowoon
