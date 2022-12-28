@@ -1,26 +1,34 @@
+<script>
+    let con = `<%= row.content %>`;
+    con = con.replace(/</gi, '&lt;').replace(/>/gi, '&gt;').replace(/\"/gi, '&quot;').replace(/'/gi, '&quot;').replace(
+        /\n/gi, '<br/>');
+</script>
+
 <div class="notice-read-wrap">
     <div class="notice-holder">
         <section class="notice-read-top">
             <div class="top-box">
                 <span class="notice-category">공지사항</span>
-                <h2 class="title">횡성초교병설유치원</h2>
-                <span class="sub-info">2022-12-08</span><span class="sub-info">|</span><span class="icon"></span><span class="sub-info">35</span>
+                <h2 class="title"><%= row.title %></h2>
+                <span class="sub-info"><%= row.create_time %></span><span class="sub-info">|</span><span class="icon"></span><span class="sub-info"><%= row.views %></span>
             </div>
         </section>
         <section class="notice-read-middle"> 
-            <pre>횡성초등학교 병설유치원 친구들이
-올해 마지막으로 체험을 다녀갔답니다.
-곤충체험과 낙농체험으로 하루를 즐겁게
-보내고 갔네요
-찾아주셔서 감사드립니다.^^*
-(관람, 곤충체험, 나무곤충만들기,
-산양먹이주기, 아이스크림만들기, 치즈피자만들기 - 3.6)</pre>
+            <p>
+                <script>
+                    document.querySelector('.notice-read-middle>p').innerHTML = con
+                </script>
+            </p>
         </section>
         <section class="notice-read-bottom"> 
             <div class="bottom-box">
                 <a href="/noticePage" class="btns">돌아가기</a>
-                <a href="" class="btns">수정</a>
-                <a href="" class="btns">삭제</a>
+                <a href="/noticeUpdatePage?id=<%= row.id %>" class="btns">수정</a>
+                <a onclick="if(confirm('정말로 삭제하시겠습니다?')){
+                    location.href='/deletenotice?id=<%= row.id %>'
+                    } else{
+                    
+                    }" class="btns">삭제</a>
             </div>
         </section>
     </div>
