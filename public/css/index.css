@@ -12,18 +12,20 @@ main {
   position: relative;
 }
 
-.videoSwiper{
+.videoSwiper {
   height: 100vh;
 }
+
 .sec1VideoWrap {
   filter: brightness(50%);
   overflow: hidden;
   height: 100vh;
 }
-video{
+
+video {
   width: 100%;
   height: 100%;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .sec1ConWrap {
@@ -138,8 +140,9 @@ article.firstArt {
 .sideDeco {
   position: relative;
 }
-.sideDeco img{
-width: 100%;
+
+.sideDeco img {
+  width: 100%;
 }
 
 .sideDeco>div {
@@ -150,87 +153,105 @@ width: 100%;
   top: 75px;
   right: -60px;
   transform-origin: 100% 100%;
-  animation: ap1-ani 5s ease-in-out  infinite ;
+  animation: ap1-ani 5s ease-in-out infinite;
 }
 
 
-@keyframes ap1-ani{
-  0%{
+@keyframes ap1-ani {
+  0% {
     transform: rotate(0);
   }
-  50%{
+
+  50% {
     transform: rotate(3deg);
   }
-  100%{
+
+  100% {
     transform: rotate(0);
   }
 }
+
 .sideDeco>.le {
   width: 300px;
   top: 341px;
   left: -55px;
   transform-origin: 30% 100%;
-  animation: le-ani 2s ease-in-out  infinite ;
+  animation: le-ani 2s ease-in-out infinite;
 }
-@keyframes le-ani{
-  0%{
+
+@keyframes le-ani {
+  0% {
     transform: rotate(0) scale(1);
   }
-  50%{
+
+  50% {
     transform: rotate(3deg) scale(1.05);
   }
-  100%{
+
+  100% {
     transform: rotate(0)scale(1);
   }
 }
+
 .sideDeco>.ac {
   top: 445px;
   right: 0px;
   /* transform-origin: 100% 100%; */
-  animation: ac-ani 3s ease-in-out  infinite ;
+  animation: ac-ani 3s ease-in-out infinite;
 }
-@keyframes ac-ani{
-  0%{
+
+@keyframes ac-ani {
+  0% {
     transform: translateY(0);
   }
-  50%{
+
+  50% {
     transform: translateY(10px);
   }
-  100%{
+
+  100% {
     transform: translateY(0);
   }
 }
+
 .sideDeco>.ap2 {
   top: 739px;
   left: 504px;
-    transform-origin: 100% 100%;
-    animation: ap2-ani 3s ease-in-out  infinite ;
+  transform-origin: 100% 100%;
+  animation: ap2-ani 3s ease-in-out infinite;
 }
-@keyframes ap2-ani{
-  0%{
+
+@keyframes ap2-ani {
+  0% {
     transform: translateX(0) translateY(0) scale(0.77);
   }
-  50%{
-    transform: translateX(-10px)  translateY(-10px) scale(0.8);
+
+  50% {
+    transform: translateX(-10px) translateY(-10px) scale(0.8);
   }
-  100%{
-    transform: translateX(0)  translateY(0) scale(0.77);
+
+  100% {
+    transform: translateX(0) translateY(0) scale(0.77);
   }
 }
+
 .sideDeco>.lef {
   top: 732px;
   right: 406px;
   transform-origin: 0% 100%;
-  animation: lef-ani 5s ease-in-out  infinite ;
+  animation: lef-ani 5s ease-in-out infinite;
 }
-@keyframes lef-ani{
-  0%{
+
+@keyframes lef-ani {
+  0% {
     transform: rotate(0);
   }
-  50%{
+
+  50% {
     transform: rotate(3deg);
   }
-  100%{
+
+  100% {
     transform: rotate(0);
   }
 }
@@ -275,7 +296,8 @@ width: 100%;
   transform: translate(-50%, -60%);
   color: #000;
 }
-.conTitWrap img{
+
+.conTitWrap img {
   width: 100%;
 }
 
@@ -283,36 +305,42 @@ width: 100%;
   font-size: 32px;
   position: absolute;
   top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.con2Swiper{
+
+.con2Swiper {
   width: 600px;
   /* width: 35%; */
   margin: 0 !important;
   overflow: initial !important;
 }
+
 .conImgWrap {
   width: 100%;
   height: 680px;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
   margin: 0 auto;
-background-size: cover;
+  background-size: cover;
   background-position: 50%;
   filter: brightness(50%);
 }
-.conImgWrap.img1{
+
+.conImgWrap.img1 {
   background-image: url('../img/watching.jpg');
 }
-.conImgWrap.img2{
+
+.conImgWrap.img2 {
   background-image: url('../img/eating.jpg');
 }
-.conImgWrap.img3{
+
+.conImgWrap.img3 {
   background-image: url('../img/studying.jpg');
   background-position: 20%;
 }
-.conImgWrap.img4{
+
+.conImgWrap.img4 {
   background-image: url('../img/playing.jpg');
 }
 
@@ -364,18 +392,20 @@ background-size: cover;
   animation: next-ani 1s ease-in-out infinite;
 }
 
-.swipeIconWrap{
-display: none;
+.swipeIconWrap {
+  display: none;
   position: absolute;
   z-index: 10;
   bottom: 250px;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   font-size: 14px;
   color: #fff;
-  animation: swipeIcon-ani 1s ease-in-out infinite;;
+  animation: swipeIcon-ani 1s ease-in-out infinite;
+  ;
 
 }
+
 @keyframes swipeIcon-ani {
   0% {
     transform: translatex(-48%);
@@ -389,7 +419,8 @@ display: none;
     transform: translatex(-48%);
   }
 }
-.swipeIconWrap>span{
+
+.swipeIconWrap>span {
   display: block;
   padding-bottom: 64px;
   background-image: url('../img/iconmonstr-cursor-22-64.png');
@@ -416,7 +447,8 @@ display: none;
   margin-top: 40px;
   font-size: 16px;
 }
-.subConWrap>li{
+
+.subConWrap>li {
   width: 40%;
   display: block;
   padding-left: 30px;
@@ -480,60 +512,78 @@ display: none;
 
 
 @media (max-width:1400px) {
+  .sec1ConWrap strong {
+    font-size: 40px;
+  }
+
+  .sec1ConWrap p {
+    font-size: 20px;
+  }
+
   .intro>h2 {
     font-size: 40px;
     font-weight: bold;
     line-height: 50px;
   }
-  
+
   .intro>h2>strong {
     font-size: 46px;
     font-weight: bold;
   }
+
   .intro>p {
     font-size: 16px;
     margin-top: 16px;
   }
+
   .sideDeco>.ap1 {
     width: 240px;
     top: 140px;
     right: -60px;
   }
+
   .sideDeco>.le {
     width: 240px;
   }
+
   .sideDeco>.ac {
     width: 240px;
   }
+
   .titleWrap>strong {
     font-size: 48px;
     margin-bottom: 16px;
-  
+
   }
+
   .titleWrap>p {
     font-size: 16px;
   }
+
   .con2Swiper {
     width: 500px;
-}
-.conTitWrap {
-  width: 430px;
-}
-.conImgWrap {
-  width: 100%;
-  height: 550px;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 40%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: 50%;
-  filter: brightness(50%);
-}
+  }
+
+  .conTitWrap {
+    width: 430px;
+  }
+
+  .conImgWrap {
+    width: 100%;
+    height: 550px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50%;
+    filter: brightness(50%);
+  }
+
   .nextWrap {
     width: 48px;
     height: 48px;
   }
-  
+
   .nextWrap>p {
     font-size: 16px;
     bottom: 17px;
@@ -544,29 +594,88 @@ display: none;
     width: 48px;
     height: 48px;
   }
-  
+
   .prevWrap>p {
-font-size: 16px;
+    font-size: 16px;
     bottom: 17px;
     right: 42px;
   }
+
   .conTitWrap>strong {
     font-size: 40px;
+  }
+
+  .conArt {
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width:768px) {
+  .intro {
+    margin-left: 10%;
+  }
+
+  .intro>h2 {
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  .intro>h2>strong {
+    font-size: 28px;
+  }
+
+  .intro>p {
+    font-size: 14px;
+  }
+
+  .sideDeco>.ap1 {
+    width: 190px;
+    top: 52px;
+    right: -36px;
+  }
+
+  .sideDeco>.le {
+    width: 145px;
+    top: 405px;
+    left: -89px;
+  }
+  .sideDeco>.ac {
+    width: 150px;
+    top: 472px;
+    right: 0px;
+}
+.titleWrap>strong {
+    font-size: 32px;
+    margin-bottom: 16px;
 }
 .conArt {
-
-  font-size: 16px;
-  line-height: 24px;
+    font-size: 14px;
+    line-height: 24px;
 }
-}
-@media (max-width:768px) {
   .prevWrap {
     display: none;
-}
+  }
+
   .nextWrap {
     display: none;
+  }
+
+  .swipeIconWrap {
+    display: block;
+    bottom: 330px;
+  }
+  .con2Swiper {
+    width: 359px;
 }
-.swipeIconWrap {
-  display: block;
+  .conImgWrap {
+    height: 380px;
+  }
+.conTitWrap {
+    width: 370px;
+}
+.secondArt {
+    padding-bottom: 20px;
 }
 }

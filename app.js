@@ -15,6 +15,4 @@ app.use(expressLayout);
 app.use('/',routers);
 app.use(express.static(path.join(__dirname,'public')));
 
-
-
 module.exports=app;

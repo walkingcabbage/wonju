@@ -1,0 +1,122 @@
+.faq_gather{
+  max-width: 1280px;
+  margin: 150px auto;
+  padding: 0 2rem;
+}
+.faq_head{
+  margin-bottom: 50px;
+}
+.faqTitle{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.faqSearch_wrap{
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.faq_search{
+  width: 90%;
+  padding: 10px 18px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  outline: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222222;
+  background-color: #f5f5f5;
+}
+.faq_loupe{
+  display: block;
+  width: 24px; height: 24px;
+  background-image: url(../img/free-icon-magnifier-64673\(1\).png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-right: 5px;
+}
+.faq_front{
+  display: flex;
+  align-items: center;
+}
+
+.faq_subtitle{
+  background-color: #efefef; 
+  border-top: 2px solid #222;
+
+  box-sizing: border-box;
+}
+
+/* #425F57; */
+.faqsub_wrap{
+  display: flex;
+  justify-content: space-evenly;
+}
+.faqsub_wrap li {
+  width: 10%;
+  padding: 15px;
+}
+.faqsub_wrap li:first-child{
+  width: 5%;
+}
+.faqsub_wrap li:nth-child(2){
+  width: 30%;
+}
+.faq_box{
+  background-color: #eeeeee;
+}
+.flex_li {
+  background-color: white;
+}
+.faq_collapsible{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: 1px solid #efefef;
+  transition: all 1.5s;
+}
+.faq_collapsible>p {
+  width: 10%;
+  padding: 10px;
+}
+.faq_collapsible p:first-child{
+  width :5%;
+}
+.faq_collapsible p:nth-child(2){
+  width :30%;
+}
+.faq_cont{
+  height: 0vh;
+  background-color: #efefef;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.faq_cont.test{
+  height: 15vh;
+}
+.faq_cont>p{
+  padding: 25px 10px;
+  line-height: 24px;
+}
+
+@media (max-width:1024px) {
+  .faq_gather{
+      padding: 0 2rem;
+  }
+  .faqTitle {
+      font-size: 28px;
+  }
+  .faqSearch_wrap{
+      width: 100%;
+      justify-content: flex-start;
+  }
+  .faq_search{
+      width:100%;
+  }
+  .faq_collapsible>p{
+      font-size: 14px;
+  }
+}
