@@ -1,17 +1,41 @@
+
+.section_dpdir{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.correc{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.calender{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.adduser{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 .mar150 {
   margin-bottom: 150px;
 }
-
 .booking_subtitle {
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 
 .booking_subtitle>h1 {
   font-size: 32px;
   margin-bottom: 35px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .booking_subtitle>p {
+  text-align: center;
   font-size: 18px;
   line-height: 24px;
 }
