@@ -8,7 +8,10 @@
         <!--action="서버의url"-->
         <input type="text" id="user_id" placeholder="아이디">
         <input type="password" id="user_pw" placeholder="비밀번호">
-        <input id="login_chk" type="submit" value="완 료">
+        <div class="flex">
+          <input id="back" type="button" onclick="location.href='/'" value="돌아가기">
+          <input id="login_chk" type="submit" value="로그인">
+        </div>
         <label for="remember_check">아이디 저장하기
           <input type="checkbox" id="remember_check">
         </label>
@@ -35,9 +38,9 @@
     </ul>
     <h2>로그인에 문제가 있으신가요?</h1>
       <div class="find_login">
-        <a class="id_find" href="#">아이디 찾기</a>
+        <a class="id_find" href="/findPage">아이디 찾기</a>
         <span>|</span>
-        <a class="pw_find" href="#">비밀번호 찾기</a>
+        <a class="pw_find" href="/findPage">비밀번호 찾기</a>
       </div>
   </div>
 </div>

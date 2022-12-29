@@ -241,6 +241,16 @@ router.get('/loginPage', function (req, res) {
     subcategory: 'login',
   });
 })
+//아이디 비번 찾기 페이지
+router.get('/findPage', function (req, res) {
+  res.render('findUser', {
+    subHeader: false,
+    subFooter: false,
+    isHF: false,
+    category: 'login',
+    subcategory: 'login',
+  });
+})
 //이용 약관 페이지
 router.get('/join01Page', function (req, res) {
   res.render('join1', {
@@ -260,6 +270,27 @@ router.get('/join02Page', function (req, res) {
     category: 'join',
     subcategory: 'join02',
   });
+})
+//회원가입 프로세스
+router.post('/joinProcess', (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  console.log(param);
+  const userId = param.user_id;
+  const userPw = param.user_pw;
+  const userName = param.user_name;
+  const userEmail = param.user_email;
+  const userNum = param.ph_num;
+
+  db.insertUser(userId, userPw, userEmail, userName, userNum, () => {
+    res.render('welcome', {
+      subHeader: false,
+      subFooter: false,
+      isHF: false,
+      category: 'join',
+      subcategory: 'welcome',
+      'name': userName,
+    });
+  })
 })
 //회원 찾기 페이지
 router.get('/findUserPage', function (req, res) {

@@ -148,9 +148,102 @@ function getDroneTabEvent() { //낙농체험 탭
         })
     }
 }
+function getCamp1TabEvent() { //곤충체험 탭
+    const tabBtn=document.querySelectorAll('#tab-1-2>li>a');
+    const tabcon=document.querySelectorAll('#box-1-2box>.boxInner');
+    const tabimg=document.querySelector('#box-1-2box');
+
+    for(let i=0;i<tabBtn.length;i++){
+        tabBtn[i].addEventListener('click',(e)=>{
+
+            e.preventDefault();
+
+            //탭 active 아이콘 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                tabBtn[j].classList.remove('activeLi');
+            }
+            //탭 콘텐츠 변경 반복문
+            for(let j=0;j<tabcon.length;j++){
+                tabcon[j].classList.remove('active');
+                if(tabBtn[i].dataset.tab==tabcon[j].id){
+                    tabcon[j].classList.add('active');
+                }
+            }
+            //탭 이미지 변경 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                    tabimg.classList.remove(tabBtn[j].dataset.tab)
+            }
+            e.target.classList.add('activeLi');
+            tabimg.classList.add(e.target.dataset.tab);
+        })
+    }
+}
+function getCamp2TabEvent() { //곤충체험 탭
+    const tabBtn=document.querySelectorAll('#tab-2-3>li>a');
+    const tabcon=document.querySelectorAll('#box-2-3box>.boxInner');
+    const tabimg=document.querySelector('#box-2-3box');
+
+    for(let i=0;i<tabBtn.length;i++){
+        tabBtn[i].addEventListener('click',(e)=>{
+
+            e.preventDefault();
+
+            //탭 active 아이콘 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                tabBtn[j].classList.remove('activeLi');
+            }
+            //탭 콘텐츠 변경 반복문
+            for(let j=0;j<tabcon.length;j++){
+                tabcon[j].classList.remove('active');
+                if(tabBtn[i].dataset.tab==tabcon[j].id){
+                    tabcon[j].classList.add('active');
+                }
+            }
+            //탭 이미지 변경 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                    tabimg.classList.remove(tabBtn[j].dataset.tab)
+            }
+            e.target.classList.add('activeLi');
+            tabimg.classList.add(e.target.dataset.tab);
+        })
+    }
+}
+function getCamp3TabEvent() { //곤충체험 탭
+    const tabBtn=document.querySelectorAll('#tab-1-2-drone>li>a');
+    const tabcon=document.querySelectorAll('#box-1-2dronebox>.boxInner');
+    const tabimg=document.querySelector('#box-1-2dronebox');
+
+    for(let i=0;i<tabBtn.length;i++){
+        tabBtn[i].addEventListener('click',(e)=>{
+
+            e.preventDefault();
+
+            //탭 active 아이콘 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                tabBtn[j].classList.remove('activeLi');
+            }
+            //탭 콘텐츠 변경 반복문
+            for(let j=0;j<tabcon.length;j++){
+                tabcon[j].classList.remove('active');
+                if(tabBtn[i].dataset.tab==tabcon[j].id){
+                    tabcon[j].classList.add('active');
+                }
+            }
+            //탭 이미지 변경 반복문
+            for(let j=0;j<tabBtn.length;j++){
+                    tabimg.classList.remove(tabBtn[j].dataset.tab)
+            }
+            e.target.classList.add('activeLi');
+            tabimg.classList.add(e.target.dataset.tab);
+        })
+    }
+}
 
 getExpTabEvent();
 getFarmTabEvent();
 getExpPkgTabEvent();
 getFarmPkgTabEvent();
 getDroneTabEvent();
+getCamp1TabEvent();
+getCamp2TabEvent();
+getCamp3TabEvent();

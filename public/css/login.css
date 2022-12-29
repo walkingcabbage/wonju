@@ -38,7 +38,7 @@ a {
 .welcom_wrap > h1 {
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 60px;
+  font-size: 32px;
   color: #749f82;
 }
 /*  */
@@ -72,10 +72,14 @@ a {
   font-size: 16px;
   color: #999999;
 }
-#login_form > input[type="submit"] {
-  width: 200px;
+#login_form .flex{
+  display: flex;
+  justify-content: center;
+}
+#login_form #back{
+  width: 160px;
   display: block;
-  margin: 20px auto;
+  margin: 20px 5px;
   padding: 10px 0;
   border-radius: 6px;
   color: #fff;
@@ -85,7 +89,26 @@ a {
   box-sizing: border-box;
   cursor: pointer;
 }
-#login_form > input[type="submit"]:hover {
+#login_form #back:hover{
+  color: #749F82;
+  background-color: #fff;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+}
+#login_form  input[type="submit"] {
+  width: 160px;
+  display: block;
+  margin: 20px 5px;
+  padding: 10px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #749F82;
+  border: 2px solid #749F82;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#login_form  input[type="submit"]:hover {
   color: #749F82;
   background-color: #fff;
   border: 2px solid #749F82;
