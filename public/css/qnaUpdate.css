@@ -61,3 +61,13 @@
   font-size: 24px;
   text-align:center;
 }
+.qr_h2{
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+}
+.qr_cate{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 10px;
+}

@@ -219,7 +219,7 @@ router.post('/qnaUpdates', (req, res) => {
   const content = param.content;
   const user = param.user;
   const tel = param.tel;
-  const category = param.category;
+  const category = param.category[value];
   db.updateQna(id, title, content, user, tel, category, () => {
     res.redirect('QNAPage');
   })
