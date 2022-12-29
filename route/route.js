@@ -225,7 +225,7 @@ router.post('/qnaUpdates', (req, res) => {
   })
 })
 
-// 묻고 답하기 작성하기 페이지
+// 묻고 답하기 작성하기 프로세스
 router.post('/qnaWrite', (req, res) => {
   let param = JSON.parse(JSON.stringify(req.body));
   const title = param.title;
@@ -233,6 +233,7 @@ router.post('/qnaWrite', (req, res) => {
   const user = param.user;
   const tel = param.tel;
   const category = param.category;
+  console.log(param);
   db.insertqna(title, content, user, tel, category, () => {
     res.redirect('QNAPage');
   })
