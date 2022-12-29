@@ -16,15 +16,22 @@
     </article>
     <article class="eCon">
       <div class="eTab">
-        <ul>
-          <li><a href="" class="activeLi">1일차</a></li>
-          <li><a href="">2일차</a></li>
+        <ul id="tab-1-2">
+          <li><a href="" class="activeLi " data-tab="tab6-1">1일차</a></li>
+          <li><a href="" data-tab="tab6-2">2일차</a></li>
         </ul>
       </div>
-      <div class="eImgBox imgBox1">
-        <div class="boxInner">
+      <div class="eImgBox tab6-1" id="box-1-2box">
+        <div class="boxInner active" id="tab6-1">
           <div class="boxTop">
             <strong>1일차</strong>
+            <a href="">일정보기</a>
+          </div>
+          <p>체험을 통하여 동물과 소통해보세요. </p>
+        </div>
+        <div class="boxInner" id="tab6-2">
+          <div class="boxTop">
+            <strong>2일차</strong>
             <a href="">일정보기</a>
           </div>
           <p>체험을 통하여 동물과 소통해보세요. </p>
@@ -45,14 +52,28 @@
     </article>
     <article class="eCon">
       <div class="eTab">
-        <ul>
-          <li><a href="">1일차</a></li>
-          <li><a href="">2일차</a></li>
-          <li><a href="" class="activeLi">3일차</a></li>
+        <ul id="tab-2-3">
+          <li><a href="" class="activeLi"  data-tab="tab7-1">1일차</a></li>
+          <li><a href="" data-tab="tab7-2">2일차</a></li>
+          <li><a href="" data-tab="tab7-3">3일차</a></li>
         </ul>
       </div>
-      <div class="eImgBox imgBox2">
-        <div class="boxInner">
+      <div class="eImgBox tab7-1" id="box-2-3box">
+        <div class="boxInner active" id="tab7-1">
+          <div class="boxTop">
+            <strong>1일차 </strong>
+            <a href="">일정보기</a>
+          </div>
+          <p>마지막은 따뜻한 추억을 만들어봅시다.</p>
+        </div>
+        <div class="boxInner" id="tab7-2">
+          <div class="boxTop">
+            <strong>2일차 </strong>
+            <a href="">일정보기</a>
+          </div>
+          <p>마지막은 따뜻한 추억을 만들어봅시다.</p>
+        </div>
+        <div class="boxInner" id="tab7-3">
           <div class="boxTop">
             <strong>3일차 </strong>
             <a href="">일정보기</a>
@@ -75,13 +96,20 @@
     </article>
     <article class="eCon">
       <div class="eTab">
-        <ul>
-          <li><a href="">1일차</a></li>
-          <li><a href="" class="activeLi">2일차</a></li>
+        <ul id="tab-1-2-drone">
+          <li><a href="" class="activeLi" data-tab="tab8-1">1일차</a></li>
+          <li><a href="" data-tab="tab8-2">2일차</a></li>
         </ul>
       </div>
-      <div class="eImgBox imgBox5">
-        <div class="boxInner">
+      <div class="eImgBox tab8-1" id="box-1-2dronebox">
+        <div class="boxInner active" id="tab8-1">
+          <div class="boxTop">
+            <strong>1일차</strong>
+            <a href="">일정보기</a>
+          </div>
+          <p>드론 올림픽을 통하여 친구들과 경쟁해봅시다.</p>
+        </div>
+        <div class="boxInner" id="tab8-2">
           <div class="boxTop">
             <strong>2일차</strong>
             <a href="">일정보기</a>
@@ -116,3 +144,5 @@
     </article>
   </section>
 </div>
+
+<script src="js/experience.js"></script>

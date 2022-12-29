@@ -60,7 +60,14 @@ function insertNotice(title, content, callback) {
       callback();
     }))
   }
-
+  //회원 등록 쿼리
+  function insertUser(userId, userPw, userEmail, userName, userNum, callback) {
+    connection.query(`INSERT INTO userinfo(userid,userpw,useremail,username,usertel) VALUES
+     ('${userId}','${userPw}','${userEmail}','${userName}','${userNum}')`, (err) => {
+      if (err) throw err;
+      callback();
+    })
+  }
 
 module.exports = {
     insertNotice,
@@ -69,4 +76,5 @@ module.exports = {
     getNoticeByid,
     updateNotice,
     deleteNoticeByid,
+    insertUser,
 };
