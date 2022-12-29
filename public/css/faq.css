@@ -11,6 +11,13 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
+.faq_search_fill{
+  display: flex;
+  justify-content: space-between;
+}
+.faq_search_fil div{
+  flex : 1;
+}
 .faqSearch_wrap{
   display: flex;
   align-items: center;
