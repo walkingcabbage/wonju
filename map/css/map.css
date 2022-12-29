@@ -1,0 +1,371 @@
+/* .map_all {
+  display: flex;
+  justify-content: center;
+} */
+.vh100 {
+  width: 100%;
+  height: 100vh;
+  background-color: #425f57;
+}
+/* 아코디언 */
+.w1280 {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.aco_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.int_txt_h1 {
+  color: #425f57;
+  font-size: 40px;
+  font-weight: bold;
+}
+.int_txt_h4 {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+  word-break: keep-all;
+}
+.int_txt_h4 strong {
+  color: #425f57;
+}
+.Accordion_wr {
+  width: 100%;
+  padding-top: 50px;
+}
+.map_span {
+  width: 100%;
+  display: flex;
+}
+.map_span > div {
+  width: 50%;
+}
+.map_tit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #425f57;
+}
+.map_cont {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+.map_cont01 {
+  padding-top: 10px;
+  padding-right: 30px;
+  font-size: 16px;
+}
+.Accordion_wr p {
+  padding-left: 30px;
+  word-break: keep-all;
+}
+.iocn {
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.titl {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bus {
+  padding-top: 30px;
+}
+.ar_right {
+  position: relative;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/ar_right.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* .aco_wrap{
+  display: inline-block;
+}
+.anw{
+  display: flex;
+} */
+.come_wrap {
+  width: 100%;
+}
+.img_wrap {
+  width: 50%;
+}
+.map_relative {
+  position: relative;
+}
+.map_relative > img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 211px;
+  left: 168px;
+}
+.ganhyun_img {
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 67px;
+  top: 503px;
+  left: -243px;
+  display: inline-block;
+  background-image: url(../img/ganhyun_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.jujung_img {
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 67px;
+  top: 503px;
+  right: -243px;
+  display: inline-block;
+  background-image: url(../img/jujung_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ganhwa_img {
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 67px;
+  top: 80px;
+  left: -243px;
+  display: inline-block;
+  background-image: url(../img/ganhwa_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wivm_logo {
+  opacity: 0;
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 153px;
+  top: 85px;
+  right: -125px;
+  display: inline-block;
+  background-image: url(../img/wivm_logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+}
+.noru_img {
+  opacity: 0;
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 72px;
+  top: 192px;
+  right: 29px;
+  display: inline-block;
+  background-image: url(../img/noru_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+}
+.eki_img {
+  opacity: 0;
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 110px;
+  top: 405px;
+  right: 36px;
+  display: inline-block;
+  background-image: url(../img/eki_img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+}
+.train01 {
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 108px;
+  top: 413px;
+  right: 126px;
+  display: inline-block;
+  background-image: url(../img/train.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+}
+.train02 {
+  position: absolute;
+  z-index: 555;
+  width: 100%;
+  height: 108px;
+  top: 494px;
+  right: 50px;
+  display: inline-block;
+  background-image: url(../img/train.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
+}
+
+.map_img {
+  width: 100%;
+  height: 620px;
+  background-image: url(../img/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.que:first-child {
+  border-top: 1px solid black;
+}
+.que {
+  position: relative;
+  padding: 17px 0;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #dddddd;
+}
+.que::before {
+  display: inline-block;
+  font-size: 14px;
+  color: #425f57;
+  margin: 0 5px;
+}
+.que.on > span {
+  font-weight: bold;
+  color: #425f57;
+}
+.anw {
+  display: none;
+  /* overflow: hidden; */
+  font-size: 14px;
+  background-color: #f4f4f2;
+  padding: 27px 0;
+}
+.anw::before {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin: 0 5px;
+}
+.arrow-wrap {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.que .arrow-top {
+  display: none;
+}
+.que .arrow-bottom {
+  display: block;
+}
+.que.on .arrow-bottom {
+  display: none;
+}
+.que.on .arrow-top {
+  display: block;
+}
+/* ==================================== */
+@media (max-width: 1400px) {
+  .w1280 {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1119px) {
+  .w1280 {
+    max-width: 900px;
+  }
+  .map_span {
+    display: block;
+  }
+  .map_span > div {
+    width: 100%;
+  }
+  .map_relative > img {
+    top: 211px;
+    left: 310px;
+  }
+}
+@media (max-width: 1000px) {
+  .w1280 {
+    max-width: 500px;
+  }
+  .int_txt_h1 {
+    font-size: 30px;
+  }
+  .int_txt_h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .map_tit {
+    font-size: 16px;
+    font-weight: bold;
+    color: #425f57;
+  }
+  .map_cont {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 15px;
+  }
+  .map_cont01 {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .map_img {
+    height: 576px;
+  }
+  .ganhwa_img {
+    left: -149px;
+  }
+  .ganhyun_img {
+    top: 475px;
+    left: -149px;
+  }
+  .jujung_img {
+    top: 475px;
+    right: -149px;
+  }
+  .wivm_logo {
+    height: 125px;
+  }
+  .train01 {
+    top: 375px;
+  }
+  .train02 {
+    top: 448px;
+  }
+  .eki_img {
+    height: 98px;
+    top: 381px;
+    right: 27px;
+  }
+  .map_relative > img {
+    width: 300px;
+    height: 300px;
+    top: 211px;
+    left: 121px;
+  }
+}
+/* @media (max-width: 768px) {
+} */

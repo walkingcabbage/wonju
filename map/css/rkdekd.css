@@ -1,0 +1,143 @@
+
+/* common START*/
+
+section.adt{
+  max-width: 1400px;
+  text-align: center;
+  margin:150px auto;
+}
+.adt p {
+  font-size: 1.2rem;
+}
+.adt img {
+  max-width: 1280px;
+  width: 90%; height: 675px;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.adt .second_tit{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.adt .leaf{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  background-image: url(../img/icon_leaf.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+}
+.adt .Auditorium_wrap div{
+  clear: both;
+}
+.adt .sub_tit{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.adt .line_tit{
+  display: inline-block;
+  width: 80%; height: 1px;
+  border-bottom: 1px solid;
+  margin: 0.75rem;
+}
+.adt .hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px 0px;
+  letter-spacing: 10px;
+}
+.adt .hr-sect::before,
+.adt .hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 2px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 20px;
+}
+.adt .CAUTION ul {
+  text-align: start;
+  padding-left: 11rem;
+  line-height: 2rem;
+}
+.adt .large_rkdekd_img{
+  width: 100%;height: 100%;
+  position: relative;
+}
+.adt .small_rkdekd_img{
+  width: 100%;height: 100%;
+  position: relative;
+}
+/* before */
+.adt .small_rkdekd_img::before{
+  content: "";
+  width: 100%; height: 100%;
+  background-color: #749F82;
+  position: absolute;
+  bottom: -50px; left: -400px;
+  z-index: -1;
+}
+.adt .large_rkdekd_img::before{
+  content: "";
+  width: 100%; height: 100%;
+  background-color: #749F82;
+  position: absolute;
+  bottom: -50px; left: -400px;
+  z-index: -1;
+}
+/* rkdekd txt */
+.adt .rkdekd_txt{
+  display: none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 90%;
+  padding: 3rem 0 3rem 2.5rem;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  text-align: left;
+  position: absolute; bottom: -14.2%; left: 49.98%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  animation: fadeInUp 1s;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translate3d(-50%, 0, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translateZ(100%);
+  }
+}
+.adt .small_rkdekd_img:hover .th.rkdekd_txt{
+  display: inline-block;
+}
+.adt .large_rkdekd_img:hover .eo.rkdekd_txt{
+  display: inline-block;
+}
+
+
+@media (max-width:1280px) {
+  .adt .first_line{
+    display: initial;
+  }
+ .adt .second_tit{
+    font-size:28px;
+  }
+}
+@media (max-width:1024px) { 
+  .adt .second_tit {
+    font-size : 24px;
+  }
+}
