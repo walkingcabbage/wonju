@@ -138,14 +138,15 @@ router.get('/noticeUpdatePage', (req, res) => {
   db.getNoticeByid(id, (rows) => {
     res.render('noticeUpdate', {
       subHeader: true,
-        subFooter: true,
-        isHF: true,
-        category: 'community',
-        subcategory: 'notice',
-      'row': rows[0],
+      subFooter: true,
+      isHF: true,
+      category: 'community',
+      subcategory: 'notice',
+      'row': rows[0]
     });
   })
 })
+
 
 //공지사항 수정 프로세스
 router.post('/updates', (req, res) => {
@@ -153,10 +154,11 @@ router.post('/updates', (req, res) => {
   const id = param.id;
   const title = param.title;
   const content = param.content;
-  db.updateNotice(id, title, content,  () => {
+  db.updateNotice(id, title, content, () => {
     res.redirect(`noticeReadPage?id=${id}`);
   })
 })
+
 //공지사항 삭제 프로세스
 router.get('/deleteNotice', (req, res) => {
   let id = req.query.id;
@@ -164,7 +166,8 @@ router.get('/deleteNotice', (req, res) => {
     res.redirect('noticePage');
   })
 })
-//자주 묻는 질문 페이지
+
+//자주 묻는 질문 리스트 페이지
 router.get('/FAQPage', function (req, res) {
   res.render('faq', {
     subHeader: true,
@@ -174,9 +177,10 @@ router.get('/FAQPage', function (req, res) {
     subcategory: 'FAQ',
   });
 })
-//묻고 답하기 페이지
-router.get('/QNAPage', function (req, res) {
-  res.render('QNA', {
+
+// 묻고 답하기 작성하기 페이지
+router.get('/qnaWritePage', function (req, res) {
+  res.render('qnaWrite', {
     subHeader: true,
     subFooter: true,
     isHF: true,
@@ -184,15 +188,84 @@ router.get('/QNAPage', function (req, res) {
     subcategory: 'QNA',
   });
 })
+// 묻고 답하기 수정 페이지 가기
+router.get('/qnaUpdatePage', function (req, res) {
+  const id = req.query.id;
+  db.getQnaInfoByid(id, (rows) => {
+    res.render('qnaUpdate', {
+      subHeader: true,
+      subFooter: true,
+      isHF: true,
+      category: 'community',
+      subcategory: 'QNA',
+      'row': rows[0]
+    });
+  })
+})
+
+//묻고 답하기 삭제 프로세스
+router.get('/deleteQna', (req, res) => {
+  let id = req.query.id;
+  db.deleteQnaByid(id, () => {
+    res.redirect('QNAPage');
+  })
+})
+
+// 묻고 답하기 수정 프로세스
+router.post('/qnaUpdates', (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  const id = param.id;
+  const title = param.title;
+  const content = param.content;
+  const user = param.user;
+  const tel = param.tel;
+  const category = param.category;
+  db.updateQna(id, title, content, user, tel, category, () => {
+    res.redirect('QNAPage');
+  })
+})
+
+// 묻고 답하기 작성하기 페이지
+router.post('/qnaWrite', (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  const title = param.title;
+  const content = param.content;
+  const user = param.user;
+  const tel = param.tel;
+  const category = param.category;
+  db.insertqna(title, content, user, tel, category, () => {
+    res.redirect('QNAPage');
+  })
+})
+
+//묻고 답하기 페이지
+router.get('/QNAPage', (req, res) => {
+  db.getqnainfo((rows) => {
+    res.render('QNA', {
+      subHeader: true,
+      subFooter: true,
+      isHF: true,
+      category: 'community',
+      subcategory: 'QNA',
+      'rows': rows
+    });
+  });
+})
 //묻고 답하기 읽기 페이지
 router.get('/QNAReadPage', function (req, res) {
-  res.render('QNARead', {
-    subHeader: true,
-    subFooter: true,
-    isHF: true,
-    category: 'community',
-    subcategory: 'QNA',
-  });
+  let id = req.query.id;
+  db.incrQnaView(id, () => {
+    db.getQnaInfoByid(id, (rows) => {
+      res.render('QNARead', {
+        subHeader: true,
+        subFooter: true,
+        isHF: true,
+        category: 'community',
+        subcategory: 'QNA',
+        'row': rows[0],
+      })
+    });
+  })
 })
 
 router.get('/learnPage', function (req, res) {
@@ -204,6 +277,7 @@ router.get('/learnPage', function (req, res) {
     subcategory: 'learn',
   });
 })
+
 router.get('/learnrefPage', function (req, res) {
   res.render('learn', {
     subHeader: true,

@@ -8,8 +8,8 @@
                 <form action="">
                     <select name="" id="">
                         <option value="tit" selected>제목</option>
-                        <option value="con" >내용</option>
-                        <option value="user" >글쓴이</option>
+                        <option value="con">내용</option>
+                        <option value="user">글쓴이</option>
                     </select>
                     <input class="textbox" type="text" placeholder="검색어를 입력해주세요">
                     <input class="searchBtn" type="submit" name="" id="">
@@ -28,22 +28,28 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <% rows.forEach((row,index) => { %>
                     <tr>
-                        <td>1</td>
-                        <td class="table-title"><a href="">겨울에 이용 가능한가요?</a></td>
-                        <td>2022-12-08</td>
-                        <td>정겨운</td>
-                        <td>293</td>
+                        <td>
+                            <a href="/QNAReadPage?id=<%= row.id %>">
+                                <%= row.id %>
+                            </a>
+                        </td>
+                        <td class="table-title">
+                            <a href="/QNAReadPage?id=<%= row.id %>">
+                                <%= row.title %>
+                            </a>
+                        </td>
+                        <td><%= row.create_time %></td>
+                        <td><%= row.user %></td>
+                        <td><%= row.views %></td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="table-title"><a href="">환불 해주세요</a></td>
-                        <td>2022-12-08</td>
-                        <td>이민우</td>
-                        <td>13</td>
-                    </tr>
+                    <% }); %>
                 </tbody>
             </table>
+        </section>
+        <section class="list-btn-wrap">
+            <a class="write-btn" href="/qnaWritePage">글쓰기</a>
         </section>
     </div>
 </div>

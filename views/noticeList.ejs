@@ -28,12 +28,12 @@
                 </thead>
                 <tbody>
                     <% rows.forEach((row,index) => { %>
-                    <tr>
-                        <td><%= row.id %></td>
-                        <td class="table-title"><a href="/noticeReadPage?id=<%= row.id %>"><%= row.title %></a></td>
-                        <td><%= row.create_time %></td>
-                        <td><%= row.views %></td>
-                    </tr>
+                        <tr>
+                            <td><%= row.id %></td>
+                            <td class="table-title"><a href="/noticeReadPage?id=<%= row.id %>"><%= row.title %></a></td>
+                            <td><%= row.create_time %></td>
+                            <td><%= row.views %></td>
+                        </tr>
                     <% }); %>
                 </tbody>
             </table>
