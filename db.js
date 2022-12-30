@@ -1,11 +1,12 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'database-2.cbz6fbp9zvar.ap-northeast-2.rds.amazonaws.com',
   user: 'root',
-  password: '1234',
+  password: 'fc357159!',
   database: 'wonju',
   dateStrings: 'date',
+  multipleStatements:true,
 });
 
 connection.connect(function (err) {
