@@ -1,4 +1,5 @@
 {
+  "name": "my-project",
   "description": "",
   "main": "app.js",
   "scripts": {
